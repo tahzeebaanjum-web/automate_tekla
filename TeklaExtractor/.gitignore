@@ -1,0 +1,26 @@
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Build files
+bin/
+obj/
+Debug/
+Release/
+
+# Node
+node_modules/
+
+# Logs
+*.log
+
+# VS
+.vs/
+.vscode/
+
+# Output files
+output.json
+graph.json
+tekla.csv 

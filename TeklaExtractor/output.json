@@ -1,1352 +1,2432 @@
 [
   {
-    "Id": 122334,
-    "Guid": "606dcafb-b5bb-4279-a7e2-71577e1931d4",
+    "Id": 95934,
+    "Guid": "6a010266-5189-467a-9c94-f61c1ad2904e",
     "Type": "BEAM",
     "Direction": "HORIZONTAL",
     "Name": "BEAM",
-    "Profile": "ISA50X50X6",
-    "Material": "Steel_Undefined",
-    "Class": "3",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
     "Finish": "",
     "StartPoint": {
-      "X": 9100.0,
-      "Y": 1350.0048403233213,
-      "Z": 350.0
+      "X": 0.0,
+      "Y": 10000.0,
+      "Z": 12000.0
     },
     "EndPoint": {
-      "X": 9100.0,
-      "Y": 3150.004840323318,
-      "Z": 350.0
+      "X": 5000.0,
+      "Y": 10000.0,
+      "Z": 12000.0
     },
     "Geometry": {
-      "DeltaX": 0.0,
-      "DeltaY": 1799.9999999999968,
+      "DeltaX": 5000.0,
+      "DeltaY": 0.0,
       "DeltaZ": 0.0,
-      "Length": 1799.9999999999968
+      "Length": 5000.0
     }
   },
   {
-    "Id": 121580,
-    "Guid": "97305712-df3c-41b1-9629-e6b2387f9aac",
-    "Type": "BEAM",
-    "Direction": "HORIZONTAL",
-    "Name": "PRECAST WALL",
-    "Profile": "3250X200",
-    "Material": "M30",
+    "Id": 95909,
+    "Guid": "8e080a35-83f3-4f99-b011-2b13ad1e7634",
+    "Type": "COLUMN",
+    "Direction": "VERTICAL",
+    "Name": "COLUMN",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
     "Class": "1",
     "Finish": "",
     "StartPoint": {
-      "X": 9000.000000000002,
-      "Y": -1.6703844656668813e-12,
+      "X": 5000.0,
+      "Y": 10000.0,
       "Z": 0.0
     },
     "EndPoint": {
-      "X": 9000.000000000002,
-      "Y": 4499.999999999998,
-      "Z": 0.0
+      "X": 5000.0,
+      "Y": 10000.0,
+      "Z": 12000.0
     },
     "Geometry": {
       "DeltaX": 0.0,
-      "DeltaY": 4500.0,
-      "DeltaZ": 0.0,
-      "Length": 4500.0
+      "DeltaY": 0.0,
+      "DeltaZ": 12000.0,
+      "Length": 12000.0
     }
   },
   {
-    "Id": 135427,
-    "Guid": "8b3f1e19-8d98-49ff-9302-ac39f7a92055",
-    "Type": "BEAM",
-    "Direction": "HORIZONTAL",
-    "Name": "HORIZONTAL WALL",
-    "Profile": "3250X200",
-    "Material": "M30",
+    "Id": 95884,
+    "Guid": "9703ae57-080c-47b8-b98f-a303fadeb609",
+    "Type": "COLUMN",
+    "Direction": "VERTICAL",
+    "Name": "COLUMN",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
     "Class": "1",
     "Finish": "",
     "StartPoint": {
-      "X": 9000.0,
-      "Y": -1000.0000000000031,
-      "Z": -4.547473508864641e-13
+      "X": 0.0,
+      "Y": 10000.0,
+      "Z": 0.0
     },
     "EndPoint": {
-      "X": 9000.000000000002,
-      "Y": -3.183231456205249e-12,
-      "Z": -2.2737367544323206e-13
+      "X": 0.0,
+      "Y": 10000.0,
+      "Z": 12000.0
     },
     "Geometry": {
-      "DeltaX": 1.8189894035458565e-12,
-      "DeltaY": 999.9999999999999,
-      "DeltaZ": 2.2737367544323206e-13,
-      "Length": 999.9999999999999
+      "DeltaX": 0.0,
+      "DeltaY": 0.0,
+      "DeltaZ": 12000.0,
+      "Length": 12000.0
     }
   },
   {
-    "Id": 135487,
-    "Guid": "6767b2b1-35e8-41ea-b67a-52d41573dc7d",
+    "Id": 95680,
+    "Guid": "23bf5f72-b457-4402-ae04-38ff74f62feb",
     "Type": "BEAM",
     "Direction": "HORIZONTAL",
-    "Name": "HORIZONTAL WALL",
-    "Profile": "3250X200",
-    "Material": "M30",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 3750.0,
+      "Y": 334.9364905389034,
+      "Z": 0.0
+    },
+    "EndPoint": {
+      "X": 5000.000000000272,
+      "Y": 2499.9999999999804,
+      "Z": 0.0
+    },
+    "Geometry": {
+      "DeltaX": 1250.000000000272,
+      "DeltaY": 2165.063509461077,
+      "DeltaZ": 0.0,
+      "Length": 2500.000000000119
+    }
+  },
+  {
+    "Id": 95655,
+    "Guid": "ce25af39-b14f-439e-b0e8-bdd423e7c83d",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 1249.9999999999989,
+      "Y": 334.93649053890385,
+      "Z": 0.0
+    },
+    "EndPoint": {
+      "X": 3750.0,
+      "Y": 334.9364905389034,
+      "Z": 0.0
+    },
+    "Geometry": {
+      "DeltaX": 2500.000000000001,
+      "DeltaY": -4.547473508864641e-13,
+      "DeltaZ": 0.0,
+      "Length": 2500.000000000001
+    }
+  },
+  {
+    "Id": 95630,
+    "Guid": "1225fc65-070a-4837-a39b-c8359ef5c1d7",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 0.0,
+      "Y": 2500.0000000000005,
+      "Z": 0.0
+    },
+    "EndPoint": {
+      "X": 1249.9999999997335,
+      "Y": 334.93649053895433,
+      "Z": 0.0
+    },
+    "Geometry": {
+      "DeltaX": 1249.9999999997335,
+      "DeltaY": -2165.063509461046,
+      "DeltaZ": 0.0,
+      "Length": 2499.999999999823
+    }
+  },
+  {
+    "Id": 95605,
+    "Guid": "c7ae24b8-36a2-42e9-bf73-76cc84ddc00b",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 1250.0000000000005,
+      "Y": 4665.063509461097,
+      "Z": 0.0
+    },
+    "EndPoint": {
+      "X": -4.476987669477239e-10,
+      "Y": 2500.0000000007785,
+      "Z": 0.0
+    },
+    "Geometry": {
+      "DeltaX": -1250.0000000004482,
+      "DeltaY": -2165.0635094603185,
+      "DeltaZ": 0.0,
+      "Length": 2499.9999999995503
+    }
+  },
+  {
+    "Id": 95580,
+    "Guid": "ce18d0ab-ed30-4f03-901c-595f7ba47de0",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 3750.0,
+      "Y": 4665.063509461097,
+      "Z": 0.0
+    },
+    "EndPoint": {
+      "X": 1250.0000000000005,
+      "Y": 4665.063509461097,
+      "Z": 0.0
+    },
+    "Geometry": {
+      "DeltaX": -2499.9999999999995,
+      "DeltaY": 0.0,
+      "DeltaZ": 0.0,
+      "Length": 2499.9999999999995
+    }
+  },
+  {
+    "Id": 95555,
+    "Guid": "3da5c769-f4da-4dfb-a3a1-51e150963d77",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 5000.0,
+      "Y": 2500.0,
+      "Z": 0.0
+    },
+    "EndPoint": {
+      "X": 3750.0000000013624,
+      "Y": 4665.063509460707,
+      "Z": 0.0
+    },
+    "Geometry": {
+      "DeltaX": -1249.9999999986376,
+      "DeltaY": 2165.063509460707,
+      "DeltaZ": 0.0,
+      "Length": 2499.9999999989814
+    }
+  },
+  {
+    "Id": 95530,
+    "Guid": "4ba913f2-d0dc-4b3b-86c2-6d106b948c85",
+    "Type": "COLUMN",
+    "Direction": "VERTICAL",
+    "Name": "BRACE",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "3",
+    "Finish": "",
+    "StartPoint": {
+      "X": 3749.9999999999895,
+      "Y": 334.93649053890664,
+      "Z": 9599.999999999975
+    },
+    "EndPoint": {
+      "X": 4999.999999998468,
+      "Y": 2500.0000000008454,
+      "Z": 11999.999999998065
+    },
+    "Geometry": {
+      "DeltaX": 1249.9999999984789,
+      "DeltaY": 2165.063509461939,
+      "DeltaZ": 2399.99999999809,
+      "Length": 3465.544690231346
+    }
+  },
+  {
+    "Id": 95505,
+    "Guid": "c418db97-4339-4be4-a1d6-869dfb2cfc7f",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BRACE",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "3",
+    "Finish": "",
+    "StartPoint": {
+      "X": 1249.9999999999955,
+      "Y": 334.93649053890385,
+      "Z": 9600.000000000015
+    },
+    "EndPoint": {
+      "X": 3749.9999999992365,
+      "Y": 334.9364905389034,
+      "Z": 12000.00000000313
+    },
+    "Geometry": {
+      "DeltaX": 2499.999999999241,
+      "DeltaY": -4.547473508864641e-13,
+      "DeltaZ": 2400.000000003116,
+      "Length": 3465.5446902343015
+    }
+  },
+  {
+    "Id": 95480,
+    "Guid": "5ea42015-13c3-47c3-8c98-e06e18d1646a",
+    "Type": "COLUMN",
+    "Direction": "VERTICAL",
+    "Name": "BRACE",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "3",
+    "Finish": "",
+    "StartPoint": {
+      "X": -1.4837908679510292e-11,
+      "Y": 2499.9999999999914,
+      "Z": 9599.99999999997
+    },
+    "EndPoint": {
+      "X": 1249.9999999983372,
+      "Y": 334.93649053892796,
+      "Z": 11999.999999998521
+    },
+    "Geometry": {
+      "DeltaX": 1249.999999998352,
+      "DeltaY": -2165.0635094610634,
+      "DeltaZ": 2399.9999999985503,
+      "Length": 3465.5446902310723
+    }
+  },
+  {
+    "Id": 95455,
+    "Guid": "6e029879-59c4-4b4d-9009-64b3be24d89b",
+    "Type": "COLUMN",
+    "Direction": "VERTICAL",
+    "Name": "BRACE",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "3",
+    "Finish": "",
+    "StartPoint": {
+      "X": 1250.0000000000125,
+      "Y": 4665.063509461088,
+      "Z": 9599.999999999969
+    },
+    "EndPoint": {
+      "X": 1.3210410543251783e-09,
+      "Y": 2499.9999999978954,
+      "Z": 11999.999999999302
+    },
+    "Geometry": {
+      "DeltaX": -1249.9999999986915,
+      "DeltaY": -2165.0635094631925,
+      "DeltaZ": 2399.9999999993324,
+      "Length": 3465.5446902330664
+    }
+  },
+  {
+    "Id": 95430,
+    "Guid": "84496376-f94a-4dbe-bbb7-0678738c1e2f",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BRACE",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "3",
+    "Finish": "",
+    "StartPoint": {
+      "X": 3750.000000000004,
+      "Y": 4665.063509461097,
+      "Z": 9600.000000000015
+    },
+    "EndPoint": {
+      "X": 1250.0000000019627,
+      "Y": 4665.063509461097,
+      "Z": 12000.000000002736
+    },
+    "Geometry": {
+      "DeltaX": -2499.9999999980414,
+      "DeltaY": 0.0,
+      "DeltaZ": 2400.000000002721,
+      "Length": 3465.544690233163
+    }
+  },
+  {
+    "Id": 95405,
+    "Guid": "0ea1ce0a-e198-4afa-8ee3-6ed034f77bac",
+    "Type": "COLUMN",
+    "Direction": "VERTICAL",
+    "Name": "BRACE",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "3",
+    "Finish": "",
+    "StartPoint": {
+      "X": 5000.0000000000255,
+      "Y": 2500.0000000000045,
+      "Z": 9599.999999999973
+    },
+    "EndPoint": {
+      "X": 3750.0000000001064,
+      "Y": 4665.0635094621575,
+      "Z": 11999.999999998401
+    },
+    "Geometry": {
+      "DeltaX": -1249.999999999919,
+      "DeltaY": 2165.063509462153,
+      "DeltaZ": 2399.9999999984284,
+      "Length": 3465.5446902322337
+    }
+  },
+  {
+    "Id": 95380,
+    "Guid": "d8483340-ad0e-40f2-845e-3b2b79db3260",
+    "Type": "COLUMN",
+    "Direction": "VERTICAL",
+    "Name": "BRACE",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "3",
+    "Finish": "",
+    "StartPoint": {
+      "X": 5000.0000000000055,
+      "Y": 2499.9999999999936,
+      "Z": 7199.999999999984
+    },
+    "EndPoint": {
+      "X": 3749.999999997409,
+      "Y": 334.9364905375687,
+      "Z": 9600.000000003076
+    },
+    "Geometry": {
+      "DeltaX": -1250.0000000025966,
+      "DeltaY": -2165.063509462425,
+      "DeltaZ": 2400.0000000030923,
+      "Length": 3465.5446902365993
+    }
+  },
+  {
+    "Id": 95355,
+    "Guid": "92cb3437-99fb-4a28-899d-46bcceb3c4b9",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BRACE",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "3",
+    "Finish": "",
+    "StartPoint": {
+      "X": 3750.000000000003,
+      "Y": 334.9364905389034,
+      "Z": 7200.000000000015
+    },
+    "EndPoint": {
+      "X": 1250.0000000019595,
+      "Y": 334.93649053890385,
+      "Z": 9600.000000002738
+    },
+    "Geometry": {
+      "DeltaX": -2499.9999999980437,
+      "DeltaY": 4.547473508864641e-13,
+      "DeltaZ": 2400.000000002723,
+      "Length": 3465.544690233166
+    }
+  },
+  {
+    "Id": 95330,
+    "Guid": "a2035453-68b8-41d8-95c9-db6e3f04974b",
+    "Type": "COLUMN",
+    "Direction": "VERTICAL",
+    "Name": "BRACE",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "3",
+    "Finish": "",
+    "StartPoint": {
+      "X": 1249.9999999999898,
+      "Y": 334.936490538909,
+      "Z": 7199.999999999986
+    },
+    "EndPoint": {
+      "X": -1.0668372851796448e-09,
+      "Y": 2500.000000000949,
+      "Z": 9600.000000002943
+    },
+    "Geometry": {
+      "DeltaX": -1250.0000000010566,
+      "DeltaY": 2165.06350946204,
+      "DeltaZ": 2400.0000000029568,
+      "Length": 3465.5446902357094
+    }
+  },
+  {
+    "Id": 95305,
+    "Guid": "3030d420-bed5-4e17-8178-656f7efa9d95",
+    "Type": "COLUMN",
+    "Direction": "VERTICAL",
+    "Name": "BRACE",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "3",
+    "Finish": "",
+    "StartPoint": {
+      "X": 4.412470389070222e-12,
+      "Y": 2500.0000000000105,
+      "Z": 7199.999999999983
+    },
+    "EndPoint": {
+      "X": 1250.000000001039,
+      "Y": 4665.063509461348,
+      "Z": 9600.000000003196
+    },
+    "Geometry": {
+      "DeltaX": 1250.0000000010348,
+      "DeltaY": 2165.0635094613376,
+      "DeltaZ": 2400.0000000032132,
+      "Length": 3465.5446902354406
+    }
+  },
+  {
+    "Id": 95280,
+    "Guid": "5e876635-093c-4c32-b3a6-86a5257cb818",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BRACE",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "3",
+    "Finish": "",
+    "StartPoint": {
+      "X": 1249.999999999997,
+      "Y": 4665.063509461097,
+      "Z": 7200.000000000015
+    },
+    "EndPoint": {
+      "X": 3749.999999999237,
+      "Y": 4665.063509461097,
+      "Z": 9600.00000000313
+    },
+    "Geometry": {
+      "DeltaX": 2499.9999999992397,
+      "DeltaY": 0.0,
+      "DeltaZ": 2400.000000003116,
+      "Length": 3465.5446902343006
+    }
+  },
+  {
+    "Id": 95255,
+    "Guid": "314e996b-5286-4211-baab-a6132e518d70",
+    "Type": "COLUMN",
+    "Direction": "VERTICAL",
+    "Name": "BRACE",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "3",
+    "Finish": "",
+    "StartPoint": {
+      "X": 3750.000000000008,
+      "Y": 4665.063509461086,
+      "Z": 7199.999999999983
+    },
+    "EndPoint": {
+      "X": 5000.000000001475,
+      "Y": 2499.999999997449,
+      "Z": 9600.000000003774
+    },
+    "Geometry": {
+      "DeltaX": 1250.000000001467,
+      "DeltaY": -2165.0635094636373,
+      "DeltaZ": 2400.0000000037917,
+      "Length": 3465.5446902374333
+    }
+  },
+  {
+    "Id": 95230,
+    "Guid": "64e88a79-8d3c-4799-b93f-6bd91808dcad",
+    "Type": "COLUMN",
+    "Direction": "VERTICAL",
+    "Name": "BRACE",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "3",
+    "Finish": "",
+    "StartPoint": {
+      "X": 3750.00000000001,
+      "Y": 334.9364905389089,
+      "Z": 4799.999999999986
+    },
+    "EndPoint": {
+      "X": 5000.000000001167,
+      "Y": 2500.000000001121,
+      "Z": 7200.000000002739
+    },
+    "Geometry": {
+      "DeltaX": 1250.0000000011569,
+      "DeltaY": 2165.063509462212,
+      "DeltaZ": 2400.000000002753,
+      "Length": 3465.544690235712
+    }
+  },
+  {
+    "Id": 95205,
+    "Guid": "0563d944-79e3-40b5-b861-bf45e50fd282",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BRACE",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "3",
+    "Finish": "",
+    "StartPoint": {
+      "X": 1249.999999999996,
+      "Y": 334.93649053890385,
+      "Z": 4800.000000000015
+    },
+    "EndPoint": {
+      "X": 3749.9999999992365,
+      "Y": 334.9364905389034,
+      "Z": 7200.0000000031305
+    },
+    "Geometry": {
+      "DeltaX": 2499.9999999992406,
+      "DeltaY": -4.547473508864641e-13,
+      "DeltaZ": 2400.000000003116,
+      "Length": 3465.5446902343015
+    }
+  },
+  {
+    "Id": 95180,
+    "Guid": "569d358c-3756-4669-85d0-1fbd06e9e321",
+    "Type": "COLUMN",
+    "Direction": "VERTICAL",
+    "Name": "BRACE",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "3",
+    "Finish": "",
+    "StartPoint": {
+      "X": 4.7410964043592685e-12,
+      "Y": 2499.99999999999,
+      "Z": 4799.999999999984
+    },
+    "EndPoint": {
+      "X": 1250.0000000010346,
+      "Y": 334.9364905386542,
+      "Z": 7200.000000003198
+    },
+    "Geometry": {
+      "DeltaX": 1250.0000000010298,
+      "DeltaY": -2165.063509461336,
+      "DeltaZ": 2400.000000003214,
+      "Length": 3465.544690235438
+    }
+  },
+  {
+    "Id": 95155,
+    "Guid": "ff43b068-b7a9-4f37-a4ea-ec0c811fa8d3",
+    "Type": "COLUMN",
+    "Direction": "VERTICAL",
+    "Name": "BRACE",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "3",
+    "Finish": "",
+    "StartPoint": {
+      "X": 1249.999999999993,
+      "Y": 4665.063509461087,
+      "Z": 4799.999999999982
+    },
+    "EndPoint": {
+      "X": -1.3760654837824404e-09,
+      "Y": 2499.9999999976226,
+      "Z": 7200.000000003978
+    },
+    "Geometry": {
+      "DeltaX": -1250.000000001369,
+      "DeltaY": -2165.0635094634645,
+      "DeltaZ": 2400.0000000039963,
+      "Length": 3465.544690237432
+    }
+  },
+  {
+    "Id": 95130,
+    "Guid": "575759ef-d196-443e-9a87-f9036b281a71",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BRACE",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "3",
+    "Finish": "",
+    "StartPoint": {
+      "X": 3750.000000000003,
+      "Y": 4665.063509461097,
+      "Z": 4800.000000000015
+    },
+    "EndPoint": {
+      "X": 1250.0000000019618,
+      "Y": 4665.063509461097,
+      "Z": 7200.000000002736
+    },
+    "Geometry": {
+      "DeltaX": -2499.9999999980414,
+      "DeltaY": 0.0,
+      "DeltaZ": 2400.000000002721,
+      "Length": 3465.544690233163
+    }
+  },
+  {
+    "Id": 95105,
+    "Guid": "b001313c-5249-4d57-a5a6-227d7dba09f6",
+    "Type": "COLUMN",
+    "Direction": "VERTICAL",
+    "Name": "BRACE",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "3",
+    "Finish": "",
+    "StartPoint": {
+      "X": 5000.000000000006,
+      "Y": 2500.0000000000064,
+      "Z": 4799.999999999984
+    },
+    "EndPoint": {
+      "X": 3749.999999997409,
+      "Y": 4665.063509462432,
+      "Z": 7200.000000003078
+    },
+    "Geometry": {
+      "DeltaX": -1250.0000000025975,
+      "DeltaY": 2165.063509462426,
+      "DeltaZ": 2400.000000003094,
+      "Length": 3465.5446902366016
+    }
+  },
+  {
+    "Id": 95080,
+    "Guid": "40d59a5c-6651-4de8-aae9-64ddfc400696",
+    "Type": "COLUMN",
+    "Direction": "VERTICAL",
+    "Name": "BRACE",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "3",
+    "Finish": "",
+    "StartPoint": {
+      "X": 5000.000000000009,
+      "Y": 2499.9999999999986,
+      "Z": 2400.0000000000005
+    },
+    "EndPoint": {
+      "X": 3749.9999999978054,
+      "Y": 334.93649053825584,
+      "Z": 4800.000000000762
+    },
+    "Geometry": {
+      "DeltaX": -1250.0000000022037,
+      "DeltaY": -2165.063509461743,
+      "DeltaZ": 2400.0000000007617,
+      "Length": 3465.5446902344174
+    }
+  },
+  {
+    "Id": 95055,
+    "Guid": "778f336d-b629-44fe-86cb-1494a049b096",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BRACE",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "3",
+    "Finish": "",
+    "StartPoint": {
+      "X": 3749.9999999999977,
+      "Y": 334.9364905389034,
+      "Z": 2399.9999999999977
+    },
+    "EndPoint": {
+      "X": 1250.0000000012296,
+      "Y": 334.93649053890385,
+      "Z": 4799.999999998814
+    },
+    "Geometry": {
+      "DeltaX": -2499.999999998768,
+      "DeltaY": 4.547473508864641e-13,
+      "DeltaZ": 2399.9999999988163,
+      "Length": 3465.5446902309827
+    }
+  },
+  {
+    "Id": 95030,
+    "Guid": "8065cd99-4ef1-4774-95db-16cfafb38edf",
+    "Type": "COLUMN",
+    "Direction": "VERTICAL",
+    "Name": "BRACE",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "3",
+    "Finish": "",
+    "StartPoint": {
+      "X": 1249.999999999993,
+      "Y": 334.9364905389038,
+      "Z": 2400.0000000000027
+    },
+    "EndPoint": {
+      "X": -6.702975952066481e-10,
+      "Y": 2500.000000000262,
+      "Z": 4800.000000000628
+    },
+    "Geometry": {
+      "DeltaX": -1250.0000000006632,
+      "DeltaY": 2165.063509461358,
+      "DeltaZ": 2400.000000000625,
+      "Length": 3465.5446902335266
+    }
+  },
+  {
+    "Id": 95005,
+    "Guid": "f54abafb-132b-4895-a918-7ec7d5ec3321",
+    "Type": "COLUMN",
+    "Direction": "VERTICAL",
+    "Name": "BRACE",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "3",
+    "Finish": "",
+    "StartPoint": {
+      "X": 1.971756091734278e-12,
+      "Y": 2500.000000000006,
+      "Z": 2400.0000000000005
+    },
+    "EndPoint": {
+      "X": 1250.000000000642,
+      "Y": 4665.0635094606605,
+      "Z": 4800.000000000882
+    },
+    "Geometry": {
+      "DeltaX": 1250.00000000064,
+      "DeltaY": 2165.0635094606546,
+      "DeltaZ": 2400.0000000008818,
+      "Length": 3465.5446902332565
+    }
+  },
+  {
+    "Id": 94980,
+    "Guid": "c1f46a61-85df-4d9f-afe7-7059f0db7a25",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BRACE",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "3",
+    "Finish": "",
+    "StartPoint": {
+      "X": 1250.000000000003,
+      "Y": 4665.063509461097,
+      "Z": 2399.9999999999973
+    },
+    "EndPoint": {
+      "X": 3749.9999999999663,
+      "Y": 4665.063509461097,
+      "Z": 4799.999999999206
+    },
+    "Geometry": {
+      "DeltaX": 2499.9999999999636,
+      "DeltaY": 0.0,
+      "DeltaZ": 2399.9999999992087,
+      "Length": 3465.5446902321173
+    }
+  },
+  {
+    "Id": 94955,
+    "Guid": "13585658-ee9a-4d58-a499-9f6244d85638",
+    "Type": "COLUMN",
+    "Direction": "VERTICAL",
+    "Name": "BRACE",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "3",
+    "Finish": "",
+    "StartPoint": {
+      "X": 3750.0000000000045,
+      "Y": 4665.063509461091,
+      "Z": 2400.0000000000005
+    },
+    "EndPoint": {
+      "X": 5000.000000001079,
+      "Y": 2499.999999998137,
+      "Z": 4800.000000001461
+    },
+    "Geometry": {
+      "DeltaX": 1250.000000001074,
+      "DeltaY": -2165.063509462954,
+      "DeltaZ": 2400.00000000146,
+      "Length": 3465.54469023525
+    }
+  },
+  {
+    "Id": 94930,
+    "Guid": "3242c676-7ff9-4851-94b6-35cd970f296b",
+    "Type": "COLUMN",
+    "Direction": "VERTICAL",
+    "Name": "BRACE",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "3",
+    "Finish": "",
+    "StartPoint": {
+      "X": 3750.000000000003,
+      "Y": 334.9364905389046,
+      "Z": -1.7408297026122455e-13
+    },
+    "EndPoint": {
+      "X": 5000.000000000142,
+      "Y": 2500.000000000293,
+      "Z": 2400.0000000000246
+    },
+    "Geometry": {
+      "DeltaX": 1250.0000000001387,
+      "DeltaY": 2165.063509461388,
+      "DeltaZ": 2400.0000000000246,
+      "Length": 3465.5446902329404
+    }
+  },
+  {
+    "Id": 94905,
+    "Guid": "ee3f306c-b99d-4246-9e76-2908da18681d",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BRACE",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "3",
+    "Finish": "",
+    "StartPoint": {
+      "X": 1250.0000000000005,
+      "Y": 334.93649053890385,
+      "Z": 1.0906830993917538e-12
+    },
+    "EndPoint": {
+      "X": 3749.999999999616,
+      "Y": 334.9364905389033,
+      "Z": 2400.000000000033
+    },
+    "Geometry": {
+      "DeltaX": 2499.9999999996157,
+      "DeltaY": -5.684341886080801e-13,
+      "DeltaZ": 2400.0000000000323,
+      "Length": 3465.5446902324366
+    }
+  },
+  {
+    "Id": 94880,
+    "Guid": "1d207eda-6276-4e22-8d8b-27545ed9754c",
+    "Type": "COLUMN",
+    "Direction": "VERTICAL",
+    "Name": "BRACE",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "3",
+    "Finish": "",
+    "StartPoint": {
+      "X": -1.744382416291046e-12,
+      "Y": 2499.9999999999945,
+      "Z": -4.0323300254385686e-12
+    },
+    "EndPoint": {
+      "X": 1250.0000000000116,
+      "Y": 334.9364905394814,
+      "Z": 2400.0000000004843
+    },
+    "Geometry": {
+      "DeltaX": 1250.0000000000134,
+      "DeltaY": -2165.063509460513,
+      "DeltaZ": 2400.0000000004884,
+      "Length": 3465.54469023267
+    }
+  },
+  {
+    "Id": 94855,
+    "Guid": "251896da-0fde-435b-b7f6-9ad2ecbc8ad1",
+    "Type": "COLUMN",
+    "Direction": "VERTICAL",
+    "Name": "BRACE",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "3",
+    "Finish": "",
+    "StartPoint": {
+      "X": 1249.9999999999995,
+      "Y": 4665.063509461092,
+      "Z": -5.3717030823463574e-12
+    },
+    "EndPoint": {
+      "X": -3.526565706124529e-10,
+      "Y": 2499.9999999984498,
+      "Z": 2400.000000001265
+    },
+    "Geometry": {
+      "DeltaX": -1250.0000000003522,
+      "DeltaY": -2165.063509462642,
+      "DeltaZ": 2400.0000000012706,
+      "Length": 3465.5446902346634
+    }
+  },
+  {
+    "Id": 94830,
+    "Guid": "3db798bc-c2f7-4e58-b262-c3f22a1fe928",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BRACE",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "3",
+    "Finish": "",
+    "StartPoint": {
+      "X": 3749.9999999999986,
+      "Y": 4665.063509461097,
+      "Z": 5.826450433232822e-13
+    },
+    "EndPoint": {
+      "X": 1250.000000001582,
+      "Y": 4665.063509461097,
+      "Z": 2399.999999999639
+    },
+    "Geometry": {
+      "DeltaX": -2499.9999999984166,
+      "DeltaY": 0.0,
+      "DeltaZ": 2399.9999999996385,
+      "Length": 3465.544690231299
+    }
+  },
+  {
+    "Id": 94805,
+    "Guid": "cd6844f3-edff-4b86-99ba-70dd18a52d9b",
+    "Type": "COLUMN",
+    "Direction": "VERTICAL",
+    "Name": "BRACE",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "3",
+    "Finish": "",
+    "StartPoint": {
+      "X": 5000.000000000013,
+      "Y": 2500.000000000002,
+      "Z": -3.6486369481281145e-12
+    },
+    "EndPoint": {
+      "X": 3749.9999999984325,
+      "Y": 4665.063509461605,
+      "Z": 2400.000000000363
+    },
+    "Geometry": {
+      "DeltaX": -1250.0000000015802,
+      "DeltaY": 2165.0635094616027,
+      "DeltaZ": 2400.0000000003665,
+      "Length": 3465.5446902338313
+    }
+  },
+  {
+    "Id": 94780,
+    "Guid": "aef0cb43-9cdc-4e04-a44a-8bb5956868ad",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 1250.0000000000005,
+      "Y": 4665.063509461097,
+      "Z": 12000.0
+    },
+    "EndPoint": {
+      "X": 3750.000000000894,
+      "Y": 334.9364905404591,
+      "Z": 12000.0
+    },
+    "Geometry": {
+      "DeltaX": 2500.0000000008936,
+      "DeltaY": -4330.127018920638,
+      "DeltaZ": 0.0,
+      "Length": 4999.9999999991
+    }
+  },
+  {
+    "Id": 94755,
+    "Guid": "70f7d965-e895-4c98-8298-ff1404ae5619",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 3750.0,
+      "Y": 4665.063509461097,
+      "Z": 12000.0
+    },
+    "EndPoint": {
+      "X": 1249.9999999981756,
+      "Y": 334.9364905396842,
+      "Z": 12000.0
+    },
+    "Geometry": {
+      "DeltaX": -2500.0000000018244,
+      "DeltaY": -4330.127018921413,
+      "DeltaZ": 0.0,
+      "Length": 5000.0000000002365
+    }
+  },
+  {
+    "Id": 94730,
+    "Guid": "4001609a-b57d-45cf-9524-b017a619e065",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 5000.0,
+      "Y": 2500.0,
+      "Z": 12000.0
+    },
+    "EndPoint": {
+      "X": 0.0,
+      "Y": 2500.0000000000005,
+      "Z": 12000.0
+    },
+    "Geometry": {
+      "DeltaX": -5000.0,
+      "DeltaY": 4.547473508864641e-13,
+      "DeltaZ": 0.0,
+      "Length": 5000.0
+    }
+  },
+  {
+    "Id": 94705,
+    "Guid": "1a1e3370-8695-4d22-8700-62d8133399fe",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 3750.0,
+      "Y": 334.9364905389034,
+      "Z": 12000.0
+    },
+    "EndPoint": {
+      "X": 5000.000000000272,
+      "Y": 2499.9999999999804,
+      "Z": 12000.0
+    },
+    "Geometry": {
+      "DeltaX": 1250.000000000272,
+      "DeltaY": 2165.063509461077,
+      "DeltaZ": 0.0,
+      "Length": 2500.000000000119
+    }
+  },
+  {
+    "Id": 94680,
+    "Guid": "91b6a64f-4470-4db9-a6f9-50a8dbd3d714",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 1249.9999999999989,
+      "Y": 334.93649053890385,
+      "Z": 12000.0
+    },
+    "EndPoint": {
+      "X": 3750.0,
+      "Y": 334.9364905389034,
+      "Z": 12000.0
+    },
+    "Geometry": {
+      "DeltaX": 2500.000000000001,
+      "DeltaY": -4.547473508864641e-13,
+      "DeltaZ": 0.0,
+      "Length": 2500.000000000001
+    }
+  },
+  {
+    "Id": 94655,
+    "Guid": "9a760c9f-52eb-43b8-8600-b6906a438388",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 0.0,
+      "Y": 2500.0000000000005,
+      "Z": 12000.0
+    },
+    "EndPoint": {
+      "X": 1249.9999999997335,
+      "Y": 334.93649053895433,
+      "Z": 12000.0
+    },
+    "Geometry": {
+      "DeltaX": 1249.9999999997335,
+      "DeltaY": -2165.063509461046,
+      "DeltaZ": 0.0,
+      "Length": 2499.999999999823
+    }
+  },
+  {
+    "Id": 94630,
+    "Guid": "2421fc55-4576-4d66-8f5b-6890a649c75e",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 1250.0000000000005,
+      "Y": 4665.063509461097,
+      "Z": 12000.0
+    },
+    "EndPoint": {
+      "X": -4.476987669477239e-10,
+      "Y": 2500.0000000007785,
+      "Z": 12000.0
+    },
+    "Geometry": {
+      "DeltaX": -1250.0000000004482,
+      "DeltaY": -2165.0635094603185,
+      "DeltaZ": 0.0,
+      "Length": 2499.9999999995503
+    }
+  },
+  {
+    "Id": 94605,
+    "Guid": "0cdf7eb5-ccf9-4f35-83b6-e078d68d38e6",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 3750.0,
+      "Y": 4665.063509461097,
+      "Z": 12000.0
+    },
+    "EndPoint": {
+      "X": 1250.0000000000005,
+      "Y": 4665.063509461097,
+      "Z": 12000.0
+    },
+    "Geometry": {
+      "DeltaX": -2499.9999999999995,
+      "DeltaY": 0.0,
+      "DeltaZ": 0.0,
+      "Length": 2499.9999999999995
+    }
+  },
+  {
+    "Id": 94580,
+    "Guid": "26ca8348-9ffa-426d-aa3b-971961b9b234",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 5000.0,
+      "Y": 2500.0,
+      "Z": 12000.0
+    },
+    "EndPoint": {
+      "X": 3750.0000000013624,
+      "Y": 4665.063509460707,
+      "Z": 12000.0
+    },
+    "Geometry": {
+      "DeltaX": -1249.9999999986376,
+      "DeltaY": 2165.063509460707,
+      "DeltaZ": 0.0,
+      "Length": 2499.9999999989814
+    }
+  },
+  {
+    "Id": 94555,
+    "Guid": "84733ced-1fbe-43e5-88d0-b61a18e2c36e",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 1250.0000000000005,
+      "Y": 4665.063509461097,
+      "Z": 9600.0
+    },
+    "EndPoint": {
+      "X": 3750.000000000894,
+      "Y": 334.9364905404591,
+      "Z": 9600.0
+    },
+    "Geometry": {
+      "DeltaX": 2500.0000000008936,
+      "DeltaY": -4330.127018920638,
+      "DeltaZ": 0.0,
+      "Length": 4999.9999999991
+    }
+  },
+  {
+    "Id": 94530,
+    "Guid": "c301b158-dc00-49fd-9971-c7c653f77bfc",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 3750.0,
+      "Y": 4665.063509461097,
+      "Z": 9600.0
+    },
+    "EndPoint": {
+      "X": 1249.9999999981756,
+      "Y": 334.9364905396842,
+      "Z": 9600.0
+    },
+    "Geometry": {
+      "DeltaX": -2500.0000000018244,
+      "DeltaY": -4330.127018921413,
+      "DeltaZ": 0.0,
+      "Length": 5000.0000000002365
+    }
+  },
+  {
+    "Id": 94505,
+    "Guid": "cae6aa13-e0e6-4abe-b8f6-77eeb0fda7bf",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 5000.0,
+      "Y": 2500.0,
+      "Z": 9600.0
+    },
+    "EndPoint": {
+      "X": 0.0,
+      "Y": 2500.0000000000005,
+      "Z": 9600.0
+    },
+    "Geometry": {
+      "DeltaX": -5000.0,
+      "DeltaY": 4.547473508864641e-13,
+      "DeltaZ": 0.0,
+      "Length": 5000.0
+    }
+  },
+  {
+    "Id": 94480,
+    "Guid": "32b09884-177f-4c73-aad1-1ed4a59995c0",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 3750.0,
+      "Y": 334.9364905389034,
+      "Z": 9600.0
+    },
+    "EndPoint": {
+      "X": 5000.000000000272,
+      "Y": 2499.9999999999804,
+      "Z": 9600.0
+    },
+    "Geometry": {
+      "DeltaX": 1250.000000000272,
+      "DeltaY": 2165.063509461077,
+      "DeltaZ": 0.0,
+      "Length": 2500.000000000119
+    }
+  },
+  {
+    "Id": 94455,
+    "Guid": "fd327479-f79b-44bc-8377-bc5cc336e7ec",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 1249.9999999999989,
+      "Y": 334.93649053890385,
+      "Z": 9600.0
+    },
+    "EndPoint": {
+      "X": 3750.0,
+      "Y": 334.9364905389034,
+      "Z": 9600.0
+    },
+    "Geometry": {
+      "DeltaX": 2500.000000000001,
+      "DeltaY": -4.547473508864641e-13,
+      "DeltaZ": 0.0,
+      "Length": 2500.000000000001
+    }
+  },
+  {
+    "Id": 94430,
+    "Guid": "b9c14f63-4c07-496b-916c-7f70e3c6d376",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 0.0,
+      "Y": 2500.0000000000005,
+      "Z": 9600.0
+    },
+    "EndPoint": {
+      "X": 1249.9999999997335,
+      "Y": 334.93649053895433,
+      "Z": 9600.0
+    },
+    "Geometry": {
+      "DeltaX": 1249.9999999997335,
+      "DeltaY": -2165.063509461046,
+      "DeltaZ": 0.0,
+      "Length": 2499.999999999823
+    }
+  },
+  {
+    "Id": 94405,
+    "Guid": "e0f870d7-82bc-4c71-81f3-dd118e13824f",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 1250.0000000000005,
+      "Y": 4665.063509461097,
+      "Z": 9600.0
+    },
+    "EndPoint": {
+      "X": -4.476987669477239e-10,
+      "Y": 2500.0000000007785,
+      "Z": 9600.0
+    },
+    "Geometry": {
+      "DeltaX": -1250.0000000004482,
+      "DeltaY": -2165.0635094603185,
+      "DeltaZ": 0.0,
+      "Length": 2499.9999999995503
+    }
+  },
+  {
+    "Id": 94380,
+    "Guid": "c64a9742-5630-4d2f-906c-646384d10946",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 3750.0,
+      "Y": 4665.063509461097,
+      "Z": 9600.0
+    },
+    "EndPoint": {
+      "X": 1250.0000000000005,
+      "Y": 4665.063509461097,
+      "Z": 9600.0
+    },
+    "Geometry": {
+      "DeltaX": -2499.9999999999995,
+      "DeltaY": 0.0,
+      "DeltaZ": 0.0,
+      "Length": 2499.9999999999995
+    }
+  },
+  {
+    "Id": 94355,
+    "Guid": "6b81291a-ea02-496e-96fb-a82551945a46",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 5000.0,
+      "Y": 2500.0,
+      "Z": 9600.0
+    },
+    "EndPoint": {
+      "X": 3750.0000000013624,
+      "Y": 4665.063509460707,
+      "Z": 9600.0
+    },
+    "Geometry": {
+      "DeltaX": -1249.9999999986376,
+      "DeltaY": 2165.063509460707,
+      "DeltaZ": 0.0,
+      "Length": 2499.9999999989814
+    }
+  },
+  {
+    "Id": 94330,
+    "Guid": "1c16a6f7-fddd-4718-bc02-5a3eef170308",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 1250.0000000000005,
+      "Y": 4665.063509461097,
+      "Z": 7200.0
+    },
+    "EndPoint": {
+      "X": 3750.000000000894,
+      "Y": 334.9364905404591,
+      "Z": 7200.0
+    },
+    "Geometry": {
+      "DeltaX": 2500.0000000008936,
+      "DeltaY": -4330.127018920638,
+      "DeltaZ": 0.0,
+      "Length": 4999.9999999991
+    }
+  },
+  {
+    "Id": 94305,
+    "Guid": "21fb1471-4b43-42b5-a440-b6b44eeaca26",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 3750.0,
+      "Y": 4665.063509461097,
+      "Z": 7200.0
+    },
+    "EndPoint": {
+      "X": 1249.9999999981756,
+      "Y": 334.9364905396842,
+      "Z": 7200.0
+    },
+    "Geometry": {
+      "DeltaX": -2500.0000000018244,
+      "DeltaY": -4330.127018921413,
+      "DeltaZ": 0.0,
+      "Length": 5000.0000000002365
+    }
+  },
+  {
+    "Id": 94280,
+    "Guid": "d357a4e5-8858-4b36-92df-e2f01cb08a4e",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 5000.0,
+      "Y": 2500.0,
+      "Z": 7200.0
+    },
+    "EndPoint": {
+      "X": 0.0,
+      "Y": 2500.0000000000005,
+      "Z": 7200.0
+    },
+    "Geometry": {
+      "DeltaX": -5000.0,
+      "DeltaY": 4.547473508864641e-13,
+      "DeltaZ": 0.0,
+      "Length": 5000.0
+    }
+  },
+  {
+    "Id": 94255,
+    "Guid": "3944f4a6-e927-49de-90c8-2463ced32306",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 3750.0,
+      "Y": 334.9364905389034,
+      "Z": 7200.0
+    },
+    "EndPoint": {
+      "X": 5000.000000000272,
+      "Y": 2499.9999999999804,
+      "Z": 7200.0
+    },
+    "Geometry": {
+      "DeltaX": 1250.000000000272,
+      "DeltaY": 2165.063509461077,
+      "DeltaZ": 0.0,
+      "Length": 2500.000000000119
+    }
+  },
+  {
+    "Id": 94230,
+    "Guid": "54094207-bb07-47de-a7e7-f498013a22cf",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 1249.9999999999989,
+      "Y": 334.93649053890385,
+      "Z": 7200.0
+    },
+    "EndPoint": {
+      "X": 3750.0,
+      "Y": 334.9364905389034,
+      "Z": 7200.0
+    },
+    "Geometry": {
+      "DeltaX": 2500.000000000001,
+      "DeltaY": -4.547473508864641e-13,
+      "DeltaZ": 0.0,
+      "Length": 2500.000000000001
+    }
+  },
+  {
+    "Id": 94205,
+    "Guid": "fc19055a-aafb-425b-848f-5fc14f5494dd",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 0.0,
+      "Y": 2500.0000000000005,
+      "Z": 7200.0
+    },
+    "EndPoint": {
+      "X": 1249.9999999997335,
+      "Y": 334.93649053895433,
+      "Z": 7200.0
+    },
+    "Geometry": {
+      "DeltaX": 1249.9999999997335,
+      "DeltaY": -2165.063509461046,
+      "DeltaZ": 0.0,
+      "Length": 2499.999999999823
+    }
+  },
+  {
+    "Id": 94180,
+    "Guid": "4f963969-ab2f-4b0a-9699-1a2298d1065d",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 1250.0000000000005,
+      "Y": 4665.063509461097,
+      "Z": 7200.0
+    },
+    "EndPoint": {
+      "X": -4.476987669477239e-10,
+      "Y": 2500.0000000007785,
+      "Z": 7200.0
+    },
+    "Geometry": {
+      "DeltaX": -1250.0000000004482,
+      "DeltaY": -2165.0635094603185,
+      "DeltaZ": 0.0,
+      "Length": 2499.9999999995503
+    }
+  },
+  {
+    "Id": 94155,
+    "Guid": "b92ad48c-0434-4023-a778-177fa63cb0cf",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 3750.0,
+      "Y": 4665.063509461097,
+      "Z": 7200.0
+    },
+    "EndPoint": {
+      "X": 1250.0000000000005,
+      "Y": 4665.063509461097,
+      "Z": 7200.0
+    },
+    "Geometry": {
+      "DeltaX": -2499.9999999999995,
+      "DeltaY": 0.0,
+      "DeltaZ": 0.0,
+      "Length": 2499.9999999999995
+    }
+  },
+  {
+    "Id": 94130,
+    "Guid": "3c40882e-9a49-4ed0-9088-36c6c91eb097",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 5000.0,
+      "Y": 2500.0,
+      "Z": 7200.0
+    },
+    "EndPoint": {
+      "X": 3750.0000000013624,
+      "Y": 4665.063509460707,
+      "Z": 7200.0
+    },
+    "Geometry": {
+      "DeltaX": -1249.9999999986376,
+      "DeltaY": 2165.063509460707,
+      "DeltaZ": 0.0,
+      "Length": 2499.9999999989814
+    }
+  },
+  {
+    "Id": 94105,
+    "Guid": "e5dc641a-f599-4343-90ed-43453a6d956e",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 1250.0000000000005,
+      "Y": 4665.063509461097,
+      "Z": 4800.0
+    },
+    "EndPoint": {
+      "X": 3750.000000000894,
+      "Y": 334.9364905404591,
+      "Z": 4800.0
+    },
+    "Geometry": {
+      "DeltaX": 2500.0000000008936,
+      "DeltaY": -4330.127018920638,
+      "DeltaZ": 0.0,
+      "Length": 4999.9999999991
+    }
+  },
+  {
+    "Id": 94080,
+    "Guid": "a50e9b7f-dd1d-486e-be05-087646a732a2",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 3750.0,
+      "Y": 4665.063509461097,
+      "Z": 4800.0
+    },
+    "EndPoint": {
+      "X": 1249.9999999981756,
+      "Y": 334.9364905396842,
+      "Z": 4800.0
+    },
+    "Geometry": {
+      "DeltaX": -2500.0000000018244,
+      "DeltaY": -4330.127018921413,
+      "DeltaZ": 0.0,
+      "Length": 5000.0000000002365
+    }
+  },
+  {
+    "Id": 94055,
+    "Guid": "a2772fe0-687d-41db-ad22-6f0f3a028ea7",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 5000.0,
+      "Y": 2500.0,
+      "Z": 4800.0
+    },
+    "EndPoint": {
+      "X": 0.0,
+      "Y": 2500.0000000000005,
+      "Z": 4800.0
+    },
+    "Geometry": {
+      "DeltaX": -5000.0,
+      "DeltaY": 4.547473508864641e-13,
+      "DeltaZ": 0.0,
+      "Length": 5000.0
+    }
+  },
+  {
+    "Id": 94030,
+    "Guid": "7e8b9940-2b57-45ca-914f-06a818b13147",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 3750.0,
+      "Y": 334.9364905389034,
+      "Z": 4800.0
+    },
+    "EndPoint": {
+      "X": 5000.000000000272,
+      "Y": 2499.9999999999804,
+      "Z": 4800.0
+    },
+    "Geometry": {
+      "DeltaX": 1250.000000000272,
+      "DeltaY": 2165.063509461077,
+      "DeltaZ": 0.0,
+      "Length": 2500.000000000119
+    }
+  },
+  {
+    "Id": 94005,
+    "Guid": "597d487e-7ed7-4d8b-969d-2957730b9659",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 1249.9999999999989,
+      "Y": 334.93649053890385,
+      "Z": 4800.0
+    },
+    "EndPoint": {
+      "X": 3750.0,
+      "Y": 334.9364905389034,
+      "Z": 4800.0
+    },
+    "Geometry": {
+      "DeltaX": 2500.000000000001,
+      "DeltaY": -4.547473508864641e-13,
+      "DeltaZ": 0.0,
+      "Length": 2500.000000000001
+    }
+  },
+  {
+    "Id": 93980,
+    "Guid": "92dc16fd-a328-4193-b610-eec1eb181943",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 0.0,
+      "Y": 2500.0000000000005,
+      "Z": 4800.0
+    },
+    "EndPoint": {
+      "X": 1249.9999999997335,
+      "Y": 334.93649053895433,
+      "Z": 4800.0
+    },
+    "Geometry": {
+      "DeltaX": 1249.9999999997335,
+      "DeltaY": -2165.063509461046,
+      "DeltaZ": 0.0,
+      "Length": 2499.999999999823
+    }
+  },
+  {
+    "Id": 93955,
+    "Guid": "77639e87-c214-4ab2-8618-32b93219d771",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 1250.0000000000005,
+      "Y": 4665.063509461097,
+      "Z": 4800.0
+    },
+    "EndPoint": {
+      "X": -4.476987669477239e-10,
+      "Y": 2500.0000000007785,
+      "Z": 4800.0
+    },
+    "Geometry": {
+      "DeltaX": -1250.0000000004482,
+      "DeltaY": -2165.0635094603185,
+      "DeltaZ": 0.0,
+      "Length": 2499.9999999995503
+    }
+  },
+  {
+    "Id": 93930,
+    "Guid": "b99c6af5-ab3e-4fcb-8e1a-6d11a5b44543",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 3750.0,
+      "Y": 4665.063509461097,
+      "Z": 4800.0
+    },
+    "EndPoint": {
+      "X": 1250.0000000000005,
+      "Y": 4665.063509461097,
+      "Z": 4800.0
+    },
+    "Geometry": {
+      "DeltaX": -2499.9999999999995,
+      "DeltaY": 0.0,
+      "DeltaZ": 0.0,
+      "Length": 2499.9999999999995
+    }
+  },
+  {
+    "Id": 93905,
+    "Guid": "03241fcb-47b3-4922-bcb6-6d4a5ba8119c",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 5000.0,
+      "Y": 2500.0,
+      "Z": 4800.0
+    },
+    "EndPoint": {
+      "X": 3750.0000000013624,
+      "Y": 4665.063509460707,
+      "Z": 4800.0
+    },
+    "Geometry": {
+      "DeltaX": -1249.9999999986376,
+      "DeltaY": 2165.063509460707,
+      "DeltaZ": 0.0,
+      "Length": 2499.9999999989814
+    }
+  },
+  {
+    "Id": 93880,
+    "Guid": "3bd1b1e2-8b79-4922-9760-121514178df7",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 1250.0000000000005,
+      "Y": 4665.063509461097,
+      "Z": 2400.0
+    },
+    "EndPoint": {
+      "X": 3750.000000000894,
+      "Y": 334.9364905404591,
+      "Z": 2400.0
+    },
+    "Geometry": {
+      "DeltaX": 2500.0000000008936,
+      "DeltaY": -4330.127018920638,
+      "DeltaZ": 0.0,
+      "Length": 4999.9999999991
+    }
+  },
+  {
+    "Id": 93855,
+    "Guid": "5819a713-98ae-4332-a66b-1c2418a969b3",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 3750.0,
+      "Y": 4665.063509461097,
+      "Z": 2400.0
+    },
+    "EndPoint": {
+      "X": 1249.9999999981756,
+      "Y": 334.9364905396842,
+      "Z": 2400.0
+    },
+    "Geometry": {
+      "DeltaX": -2500.0000000018244,
+      "DeltaY": -4330.127018921413,
+      "DeltaZ": 0.0,
+      "Length": 5000.0000000002365
+    }
+  },
+  {
+    "Id": 93830,
+    "Guid": "9689634e-bd5d-4051-b98b-08725526be90",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 5000.0,
+      "Y": 2500.0,
+      "Z": 2400.0
+    },
+    "EndPoint": {
+      "X": 0.0,
+      "Y": 2500.0000000000005,
+      "Z": 2400.0
+    },
+    "Geometry": {
+      "DeltaX": -5000.0,
+      "DeltaY": 4.547473508864641e-13,
+      "DeltaZ": 0.0,
+      "Length": 5000.0
+    }
+  },
+  {
+    "Id": 93805,
+    "Guid": "74fe524f-88a8-4cd3-af16-3ab8aa6d3d74",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 3750.0,
+      "Y": 334.9364905389034,
+      "Z": 2400.0
+    },
+    "EndPoint": {
+      "X": 5000.000000000272,
+      "Y": 2499.9999999999804,
+      "Z": 2400.0
+    },
+    "Geometry": {
+      "DeltaX": 1250.000000000272,
+      "DeltaY": 2165.063509461077,
+      "DeltaZ": 0.0,
+      "Length": 2500.000000000119
+    }
+  },
+  {
+    "Id": 93780,
+    "Guid": "709ffc91-381f-4d2f-9b10-a2b2b59b5050",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 1249.9999999999989,
+      "Y": 334.93649053890385,
+      "Z": 2400.0
+    },
+    "EndPoint": {
+      "X": 3750.0,
+      "Y": 334.9364905389034,
+      "Z": 2400.0
+    },
+    "Geometry": {
+      "DeltaX": 2500.000000000001,
+      "DeltaY": -4.547473508864641e-13,
+      "DeltaZ": 0.0,
+      "Length": 2500.000000000001
+    }
+  },
+  {
+    "Id": 93755,
+    "Guid": "71c540d6-91f9-443e-80ce-8d4001f6c730",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 0.0,
+      "Y": 2500.0000000000005,
+      "Z": 2400.0
+    },
+    "EndPoint": {
+      "X": 1249.9999999997335,
+      "Y": 334.93649053895433,
+      "Z": 2400.0
+    },
+    "Geometry": {
+      "DeltaX": 1249.9999999997335,
+      "DeltaY": -2165.063509461046,
+      "DeltaZ": 0.0,
+      "Length": 2499.999999999823
+    }
+  },
+  {
+    "Id": 93730,
+    "Guid": "91de0bf6-6900-445b-8eee-b40543395e45",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 1250.0000000000005,
+      "Y": 4665.063509461097,
+      "Z": 2400.0
+    },
+    "EndPoint": {
+      "X": -4.476987669477239e-10,
+      "Y": 2500.0000000007785,
+      "Z": 2400.0
+    },
+    "Geometry": {
+      "DeltaX": -1250.0000000004482,
+      "DeltaY": -2165.0635094603185,
+      "DeltaZ": 0.0,
+      "Length": 2499.9999999995503
+    }
+  },
+  {
+    "Id": 93705,
+    "Guid": "5811de47-66c6-4ea6-abcf-4fbed4e7ec49",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 3750.0,
+      "Y": 4665.063509461097,
+      "Z": 2400.0
+    },
+    "EndPoint": {
+      "X": 1250.0000000000005,
+      "Y": 4665.063509461097,
+      "Z": 2400.0
+    },
+    "Geometry": {
+      "DeltaX": -2499.9999999999995,
+      "DeltaY": 0.0,
+      "DeltaZ": 0.0,
+      "Length": 2499.9999999999995
+    }
+  },
+  {
+    "Id": 93680,
+    "Guid": "6ab5b303-15a6-4cef-afde-c064485a971f",
+    "Type": "BEAM",
+    "Direction": "HORIZONTAL",
+    "Name": "BEAM",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "2",
+    "Finish": "",
+    "StartPoint": {
+      "X": 5000.0,
+      "Y": 2500.0,
+      "Z": 2400.0
+    },
+    "EndPoint": {
+      "X": 3750.0000000013624,
+      "Y": 4665.063509460707,
+      "Z": 2400.0
+    },
+    "Geometry": {
+      "DeltaX": -1249.9999999986376,
+      "DeltaY": 2165.063509460707,
+      "DeltaZ": 0.0,
+      "Length": 2499.9999999989814
+    }
+  },
+  {
+    "Id": 93655,
+    "Guid": "886f09fb-1b5d-4482-a5af-f79c26be0627",
+    "Type": "COLUMN",
+    "Direction": "VERTICAL",
+    "Name": "COLUMN",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
     "Class": "1",
     "Finish": "",
     "StartPoint": {
-      "X": 9000.0,
-      "Y": 4499.999999999997,
-      "Z": -9.094947017729282e-13
+      "X": 3750.0,
+      "Y": 334.9364905389034,
+      "Z": 0.0
     },
     "EndPoint": {
-      "X": 9000.0,
-      "Y": 5499.999999999997,
-      "Z": -9.094947017729282e-13
-    },
-    "Geometry": {
-      "DeltaX": 0.0,
-      "DeltaY": 1000.0,
-      "DeltaZ": 0.0,
-      "Length": 1000.0
-    }
-  },
-  {
-    "Id": 153676,
-    "Guid": "9cea2834-d3ff-4c95-b4ce-b6b31b42c26c",
-    "Type": "COLUMN",
-    "Direction": "VERTICAL",
-    "Name": "PVL80",
-    "Profile": "PL50*20",
-    "Material": "Steel_Undefined",
-    "Class": "100",
-    "Finish": "Undefined",
-    "StartPoint": {
-      "X": 9000.000000000002,
-      "Y": -50.00000000000716,
-      "Z": 2672.4999840000023
-    },
-    "EndPoint": {
-      "X": 9000.000000000002,
-      "Y": -50.00000000000716,
-      "Z": 2512.4999840000046
+      "X": 3750.0,
+      "Y": 334.9364905389034,
+      "Z": 12000.0
     },
     "Geometry": {
       "DeltaX": 0.0,
       "DeltaY": 0.0,
-      "DeltaZ": -159.99999999999773,
-      "Length": 159.99999999999773
+      "DeltaZ": 12000.0,
+      "Length": 12000.0
     }
   },
   {
-    "Id": 151269,
-    "Guid": "1d2d3be3-ca6f-47e5-a982-80ded84afd3b",
+    "Id": 93630,
+    "Guid": "a058db58-5fe5-4b74-8496-cc0085bd8c91",
     "Type": "COLUMN",
     "Direction": "VERTICAL",
-    "Name": "PVL80",
-    "Profile": "PL50*20",
-    "Material": "Steel_Undefined",
-    "Class": "100",
-    "Finish": "Undefined",
+    "Name": "COLUMN",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "1",
+    "Finish": "",
     "StartPoint": {
-      "X": 8999.999999999998,
-      "Y": 50.00000000000193,
-      "Z": 2252.4999840000023
+      "X": 1249.9999999999989,
+      "Y": 334.93649053890385,
+      "Z": 0.0
     },
     "EndPoint": {
-      "X": 8999.999999999998,
-      "Y": 50.00000000000193,
-      "Z": 2092.4999840000046
+      "X": 1249.9999999999989,
+      "Y": 334.93649053890385,
+      "Z": 12000.0
     },
     "Geometry": {
       "DeltaX": 0.0,
       "DeltaY": 0.0,
-      "DeltaZ": -159.99999999999773,
-      "Length": 159.99999999999773
+      "DeltaZ": 12000.0,
+      "Length": 12000.0
     }
   },
   {
-    "Id": 151497,
-    "Guid": "9e4280e2-3e08-4493-80d1-dc94f18de2c5",
+    "Id": 93605,
+    "Guid": "e8474cad-44ca-4e4d-b771-77dfe38b1b54",
     "Type": "COLUMN",
     "Direction": "VERTICAL",
-    "Name": "PVL80",
-    "Profile": "PL50*20",
-    "Material": "Steel_Undefined",
-    "Class": "100",
-    "Finish": "Undefined",
-    "StartPoint": {
-      "X": 8999.999999999998,
-      "Y": 50.00000000000193,
-      "Z": 2652.4999840000023
-    },
-    "EndPoint": {
-      "X": 8999.999999999998,
-      "Y": 50.00000000000193,
-      "Z": 2492.4999840000046
-    },
-    "Geometry": {
-      "DeltaX": 0.0,
-      "DeltaY": 0.0,
-      "DeltaZ": -159.99999999999773,
-      "Length": 159.99999999999773
-    }
-  },
-  {
-    "Id": 149526,
-    "Guid": "27ce0f2a-95fc-4c6f-99a1-bcffc644c777",
-    "Type": "COLUMN",
-    "Direction": "VERTICAL",
-    "Name": "PVL80",
-    "Profile": "PL50*20",
-    "Material": "Steel_Undefined",
-    "Class": "100",
-    "Finish": "Undefined",
-    "StartPoint": {
-      "X": 8999.999999999996,
-      "Y": 4550.0,
-      "Z": 3072.4999840000037
-    },
-    "EndPoint": {
-      "X": 8999.999999999996,
-      "Y": 4550.0,
-      "Z": 2912.4999840000055
-    },
-    "Geometry": {
-      "DeltaX": 0.0,
-      "DeltaY": 0.0,
-      "DeltaZ": -159.99999999999818,
-      "Length": 159.99999999999818
-    }
-  },
-  {
-    "Id": 149969,
-    "Guid": "176dec1a-a084-4adc-a8c3-f364a3a5b331",
-    "Type": "COLUMN",
-    "Direction": "VERTICAL",
-    "Name": "PVL80",
-    "Profile": "PL50*20",
-    "Material": "Steel_Undefined",
-    "Class": "100",
-    "Finish": "Undefined",
-    "StartPoint": {
-      "X": 8999.999999999998,
-      "Y": 49.999999999999375,
-      "Z": 252.49998400000348
-    },
-    "EndPoint": {
-      "X": 8999.999999999998,
-      "Y": 49.999999999999375,
-      "Z": 92.49998400000581
-    },
-    "Geometry": {
-      "DeltaX": 0.0,
-      "DeltaY": 0.0,
-      "DeltaZ": -159.99999999999767,
-      "Length": 159.99999999999767
-    }
-  },
-  {
-    "Id": 150229,
-    "Guid": "2cb4c1fe-5ee8-4fed-a64b-78d55f4d8041",
-    "Type": "COLUMN",
-    "Direction": "VERTICAL",
-    "Name": "PVL80",
-    "Profile": "PL50*20",
-    "Material": "Steel_Undefined",
-    "Class": "100",
-    "Finish": "Undefined",
-    "StartPoint": {
-      "X": 8999.999999999998,
-      "Y": 49.999999999999545,
-      "Z": 652.4999840000032
-    },
-    "EndPoint": {
-      "X": 8999.999999999998,
-      "Y": 49.999999999999545,
-      "Z": 492.49998400000567
-    },
-    "Geometry": {
-      "DeltaX": 0.0,
-      "DeltaY": 0.0,
-      "DeltaZ": -159.99999999999756,
-      "Length": 159.99999999999756
-    }
-  },
-  {
-    "Id": 150489,
-    "Guid": "47ffbabf-3e76-4aca-906d-7ff5472ea961",
-    "Type": "COLUMN",
-    "Direction": "VERTICAL",
-    "Name": "PVL80",
-    "Profile": "PL50*20",
-    "Material": "Steel_Undefined",
-    "Class": "100",
-    "Finish": "Undefined",
-    "StartPoint": {
-      "X": 8999.999999999998,
-      "Y": 49.99999999999966,
-      "Z": 1052.499984000003
-    },
-    "EndPoint": {
-      "X": 8999.999999999998,
-      "Y": 49.99999999999966,
-      "Z": 892.4999840000055
-    },
-    "Geometry": {
-      "DeltaX": 0.0,
-      "DeltaY": 0.0,
-      "DeltaZ": -159.9999999999975,
-      "Length": 159.9999999999975
-    }
-  },
-  {
-    "Id": 150749,
-    "Guid": "43f90b12-221b-4d24-b15c-68d0f22d2ad8",
-    "Type": "COLUMN",
-    "Direction": "VERTICAL",
-    "Name": "PVL80",
-    "Profile": "PL50*20",
-    "Material": "Steel_Undefined",
-    "Class": "100",
-    "Finish": "Undefined",
-    "StartPoint": {
-      "X": 8999.999999999998,
-      "Y": 49.99999999999966,
-      "Z": 1452.499984000003
-    },
-    "EndPoint": {
-      "X": 8999.999999999998,
-      "Y": 49.99999999999966,
-      "Z": 1292.4999840000053
-    },
-    "Geometry": {
-      "DeltaX": 0.0,
-      "DeltaY": 0.0,
-      "DeltaZ": -159.99999999999773,
-      "Length": 159.99999999999773
-    }
-  },
-  {
-    "Id": 151009,
-    "Guid": "6ecfc2b2-4efb-43cd-a255-4a67e60aadfa",
-    "Type": "COLUMN",
-    "Direction": "VERTICAL",
-    "Name": "PVL80",
-    "Profile": "PL50*20",
-    "Material": "Steel_Undefined",
-    "Class": "100",
-    "Finish": "Undefined",
-    "StartPoint": {
-      "X": 8999.999999999998,
-      "Y": 49.99999999999966,
-      "Z": 1852.499984000003
-    },
-    "EndPoint": {
-      "X": 8999.999999999998,
-      "Y": 49.99999999999966,
-      "Z": 1692.4999840000053
-    },
-    "Geometry": {
-      "DeltaX": 0.0,
-      "DeltaY": 0.0,
-      "DeltaZ": -159.99999999999773,
-      "Length": 159.99999999999773
-    }
-  },
-  {
-    "Id": 146988,
-    "Guid": "54123530-0999-4df5-80a0-6f951db256a8",
-    "Type": "COLUMN",
-    "Direction": "VERTICAL",
-    "Name": "PVL80",
-    "Profile": "PL50*20",
-    "Material": "Steel_Undefined",
-    "Class": "100",
-    "Finish": "Undefined",
-    "StartPoint": {
-      "X": 9000.000000000004,
-      "Y": 4449.999999999996,
-      "Z": 2652.4999840000037
-    },
-    "EndPoint": {
-      "X": 9000.000000000004,
-      "Y": 4449.999999999996,
-      "Z": 2492.4999840000055
-    },
-    "Geometry": {
-      "DeltaX": 0.0,
-      "DeltaY": 0.0,
-      "DeltaZ": -159.99999999999818,
-      "Length": 159.99999999999818
-    }
-  },
-  {
-    "Id": 151725,
-    "Guid": "7d8f3422-23f6-485e-bccb-feea2ce1f002",
-    "Type": "COLUMN",
-    "Direction": "VERTICAL",
-    "Name": "PVL80",
-    "Profile": "PL50*20",
-    "Material": "Steel_Undefined",
-    "Class": "100",
-    "Finish": "Undefined",
-    "StartPoint": {
-      "X": 8999.999999999998,
-      "Y": 50.00000000000193,
-      "Z": 3052.4999840000023
-    },
-    "EndPoint": {
-      "X": 8999.999999999998,
-      "Y": 50.00000000000193,
-      "Z": 2892.4999840000046
-    },
-    "Geometry": {
-      "DeltaX": 0.0,
-      "DeltaY": 0.0,
-      "DeltaZ": -159.99999999999773,
-      "Length": 159.99999999999773
-    }
-  },
-  {
-    "Id": 152148,
-    "Guid": "d82624bb-1550-400a-bec6-733804d546a0",
-    "Type": "COLUMN",
-    "Direction": "VERTICAL",
-    "Name": "PVL80",
-    "Profile": "PL50*20",
-    "Material": "Steel_Undefined",
-    "Class": "100",
-    "Finish": "Undefined",
-    "StartPoint": {
-      "X": 9000.000000000002,
-      "Y": -50.00000000000438,
-      "Z": 272.4999840000036
-    },
-    "EndPoint": {
-      "X": 9000.000000000002,
-      "Y": -50.00000000000438,
-      "Z": 112.49998400000601
-    },
-    "Geometry": {
-      "DeltaX": 0.0,
-      "DeltaY": 0.0,
-      "DeltaZ": -159.9999999999976,
-      "Length": 159.9999999999976
-    }
-  },
-  {
-    "Id": 152408,
-    "Guid": "f3c027b8-a67b-4c25-9599-05ae3aa70ed8",
-    "Type": "COLUMN",
-    "Direction": "VERTICAL",
-    "Name": "PVL80",
-    "Profile": "PL50*20",
-    "Material": "Steel_Undefined",
-    "Class": "100",
-    "Finish": "Undefined",
-    "StartPoint": {
-      "X": 9000.000000000002,
-      "Y": -50.00000000000455,
-      "Z": 672.4999840000035
-    },
-    "EndPoint": {
-      "X": 9000.000000000002,
-      "Y": -50.00000000000455,
-      "Z": 512.4999840000057
-    },
-    "Geometry": {
-      "DeltaX": 0.0,
-      "DeltaY": 0.0,
-      "DeltaZ": -159.99999999999773,
-      "Length": 159.99999999999773
-    }
-  },
-  {
-    "Id": 152668,
-    "Guid": "5c8f6381-d5b2-4641-96ff-e23aed58d3b2",
-    "Type": "COLUMN",
-    "Direction": "VERTICAL",
-    "Name": "PVL80",
-    "Profile": "PL50*20",
-    "Material": "Steel_Undefined",
-    "Class": "100",
-    "Finish": "Undefined",
-    "StartPoint": {
-      "X": 9000.000000000002,
-      "Y": -50.00000000000489,
-      "Z": 1072.499984000003
-    },
-    "EndPoint": {
-      "X": 9000.000000000002,
-      "Y": -50.00000000000489,
-      "Z": 912.4999840000056
-    },
-    "Geometry": {
-      "DeltaX": 0.0,
-      "DeltaY": 0.0,
-      "DeltaZ": -159.99999999999739,
-      "Length": 159.99999999999739
-    }
-  },
-  {
-    "Id": 152928,
-    "Guid": "77130dc9-bf8b-47db-82dc-154f284b9e87",
-    "Type": "COLUMN",
-    "Direction": "VERTICAL",
-    "Name": "PVL80",
-    "Profile": "PL50*20",
-    "Material": "Steel_Undefined",
-    "Class": "100",
-    "Finish": "Undefined",
-    "StartPoint": {
-      "X": 9000.000000000002,
-      "Y": -50.00000000000489,
-      "Z": 1472.499984000003
-    },
-    "EndPoint": {
-      "X": 9000.000000000002,
-      "Y": -50.00000000000489,
-      "Z": 1312.4999840000053
-    },
-    "Geometry": {
-      "DeltaX": 0.0,
-      "DeltaY": 0.0,
-      "DeltaZ": -159.99999999999773,
-      "Length": 159.99999999999773
-    }
-  },
-  {
-    "Id": 153188,
-    "Guid": "0ce4d838-a57c-4846-a720-dae52f0ab233",
-    "Type": "COLUMN",
-    "Direction": "VERTICAL",
-    "Name": "PVL80",
-    "Profile": "PL50*20",
-    "Material": "Steel_Undefined",
-    "Class": "100",
-    "Finish": "Undefined",
-    "StartPoint": {
-      "X": 9000.000000000002,
-      "Y": -50.00000000000489,
-      "Z": 1872.499984000003
-    },
-    "EndPoint": {
-      "X": 9000.000000000002,
-      "Y": -50.00000000000489,
-      "Z": 1712.4999840000053
-    },
-    "Geometry": {
-      "DeltaX": 0.0,
-      "DeltaY": 0.0,
-      "DeltaZ": -159.99999999999773,
-      "Length": 159.99999999999773
-    }
-  },
-  {
-    "Id": 153448,
-    "Guid": "314c4118-cca2-430f-aae7-cdaba5979836",
-    "Type": "COLUMN",
-    "Direction": "VERTICAL",
-    "Name": "PVL80",
-    "Profile": "PL50*20",
-    "Material": "Steel_Undefined",
-    "Class": "100",
-    "Finish": "Undefined",
-    "StartPoint": {
-      "X": 9000.000000000002,
-      "Y": -50.00000000000716,
-      "Z": 2272.4999840000023
-    },
-    "EndPoint": {
-      "X": 9000.000000000002,
-      "Y": -50.00000000000716,
-      "Z": 2112.4999840000046
-    },
-    "Geometry": {
-      "DeltaX": 0.0,
-      "DeltaY": 0.0,
-      "DeltaZ": -159.99999999999773,
-      "Length": 159.99999999999773
-    }
-  },
-  {
-    "Id": 145391,
-    "Guid": "a7c78228-3a49-440f-b6fa-e731bcff3d73",
-    "Type": "COLUMN",
-    "Direction": "VERTICAL",
-    "Name": "PVL80",
-    "Profile": "PL50*20",
-    "Material": "Steel_Undefined",
-    "Class": "100",
-    "Finish": "Undefined",
-    "StartPoint": {
-      "X": 9000.000000000004,
-      "Y": 4449.999999999996,
-      "Z": 252.49998400000368
-    },
-    "EndPoint": {
-      "X": 9000.000000000004,
-      "Y": 4449.999999999996,
-      "Z": 92.4999840000055
-    },
-    "Geometry": {
-      "DeltaX": 0.0,
-      "DeltaY": 0.0,
-      "DeltaZ": -159.99999999999818,
-      "Length": 159.99999999999818
-    }
-  },
-  {
-    "Id": 145688,
-    "Guid": "c8af8010-961b-4419-866d-702268f789f9",
-    "Type": "COLUMN",
-    "Direction": "VERTICAL",
-    "Name": "PVL80",
-    "Profile": "PL50*20",
-    "Material": "Steel_Undefined",
-    "Class": "100",
-    "Finish": "Undefined",
-    "StartPoint": {
-      "X": 9000.000000000004,
-      "Y": 4449.999999999996,
-      "Z": 652.4999840000037
-    },
-    "EndPoint": {
-      "X": 9000.000000000004,
-      "Y": 4449.999999999996,
-      "Z": 492.4999840000055
-    },
-    "Geometry": {
-      "DeltaX": 0.0,
-      "DeltaY": 0.0,
-      "DeltaZ": -159.99999999999818,
-      "Length": 159.99999999999818
-    }
-  },
-  {
-    "Id": 145948,
-    "Guid": "ebf1e1e0-db97-435a-a4e7-16e2dad2e827",
-    "Type": "COLUMN",
-    "Direction": "VERTICAL",
-    "Name": "PVL80",
-    "Profile": "PL50*20",
-    "Material": "Steel_Undefined",
-    "Class": "100",
-    "Finish": "Undefined",
-    "StartPoint": {
-      "X": 9000.000000000004,
-      "Y": 4449.999999999996,
-      "Z": 1052.4999840000037
-    },
-    "EndPoint": {
-      "X": 9000.000000000004,
-      "Y": 4449.999999999996,
-      "Z": 892.4999840000055
-    },
-    "Geometry": {
-      "DeltaX": 0.0,
-      "DeltaY": 0.0,
-      "DeltaZ": -159.99999999999818,
-      "Length": 159.99999999999818
-    }
-  },
-  {
-    "Id": 146208,
-    "Guid": "9f16c129-6a2e-44ad-92da-87072938978b",
-    "Type": "COLUMN",
-    "Direction": "VERTICAL",
-    "Name": "PVL80",
-    "Profile": "PL50*20",
-    "Material": "Steel_Undefined",
-    "Class": "100",
-    "Finish": "Undefined",
-    "StartPoint": {
-      "X": 9000.000000000004,
-      "Y": 4449.999999999996,
-      "Z": 1452.4999840000037
-    },
-    "EndPoint": {
-      "X": 9000.000000000004,
-      "Y": 4449.999999999996,
-      "Z": 1292.4999840000055
-    },
-    "Geometry": {
-      "DeltaX": 0.0,
-      "DeltaY": 0.0,
-      "DeltaZ": -159.99999999999818,
-      "Length": 159.99999999999818
-    }
-  },
-  {
-    "Id": 146468,
-    "Guid": "b990fa62-717f-4ee1-813e-3555b0e55099",
-    "Type": "COLUMN",
-    "Direction": "VERTICAL",
-    "Name": "PVL80",
-    "Profile": "PL50*20",
-    "Material": "Steel_Undefined",
-    "Class": "100",
-    "Finish": "Undefined",
-    "StartPoint": {
-      "X": 9000.000000000004,
-      "Y": 4449.999999999996,
-      "Z": 1852.4999840000037
-    },
-    "EndPoint": {
-      "X": 9000.000000000004,
-      "Y": 4449.999999999996,
-      "Z": 1692.4999840000055
-    },
-    "Geometry": {
-      "DeltaX": 0.0,
-      "DeltaY": 0.0,
-      "DeltaZ": -159.99999999999818,
-      "Length": 159.99999999999818
-    }
-  },
-  {
-    "Id": 146728,
-    "Guid": "c09d7ba4-a85f-45f0-8d97-1557eb96a6ae",
-    "Type": "COLUMN",
-    "Direction": "VERTICAL",
-    "Name": "PVL80",
-    "Profile": "PL50*20",
-    "Material": "Steel_Undefined",
-    "Class": "100",
-    "Finish": "Undefined",
-    "StartPoint": {
-      "X": 9000.000000000004,
-      "Y": 4449.999999999996,
-      "Z": 2252.4999840000037
-    },
-    "EndPoint": {
-      "X": 9000.000000000004,
-      "Y": 4449.999999999996,
-      "Z": 2092.4999840000055
-    },
-    "Geometry": {
-      "DeltaX": 0.0,
-      "DeltaY": 0.0,
-      "DeltaZ": -159.99999999999818,
-      "Length": 159.99999999999818
-    }
-  },
-  {
-    "Id": 147248,
-    "Guid": "35fe8f4d-fe3c-4bdb-a665-d4262807ba03",
-    "Type": "COLUMN",
-    "Direction": "VERTICAL",
-    "Name": "PVL80",
-    "Profile": "PL50*20",
-    "Material": "Steel_Undefined",
-    "Class": "100",
-    "Finish": "Undefined",
-    "StartPoint": {
-      "X": 9000.000000000004,
-      "Y": 4449.999999999996,
-      "Z": 3052.4999840000037
-    },
-    "EndPoint": {
-      "X": 9000.000000000004,
-      "Y": 4449.999999999996,
-      "Z": 2892.4999840000055
-    },
-    "Geometry": {
-      "DeltaX": 0.0,
-      "DeltaY": 0.0,
-      "DeltaZ": -159.99999999999818,
-      "Length": 159.99999999999818
-    }
-  },
-  {
-    "Id": 147706,
-    "Guid": "363fd129-0bc4-49b3-8b7a-48a1ecec4a50",
-    "Type": "COLUMN",
-    "Direction": "VERTICAL",
-    "Name": "PVL80",
-    "Profile": "PL50*20",
-    "Material": "Steel_Undefined",
-    "Class": "100",
-    "Finish": "Undefined",
-    "StartPoint": {
-      "X": 8999.999999999996,
-      "Y": 4550.0,
-      "Z": 272.4999840000037
-    },
-    "EndPoint": {
-      "X": 8999.999999999996,
-      "Y": 4550.0,
-      "Z": 112.4999840000055
-    },
-    "Geometry": {
-      "DeltaX": 0.0,
-      "DeltaY": 0.0,
-      "DeltaZ": -159.99999999999818,
-      "Length": 159.99999999999818
-    }
-  },
-  {
-    "Id": 147966,
-    "Guid": "969b2b00-f9fa-4e13-bba5-9703f1435bef",
-    "Type": "COLUMN",
-    "Direction": "VERTICAL",
-    "Name": "PVL80",
-    "Profile": "PL50*20",
-    "Material": "Steel_Undefined",
-    "Class": "100",
-    "Finish": "Undefined",
-    "StartPoint": {
-      "X": 8999.999999999996,
-      "Y": 4550.0,
-      "Z": 672.4999840000037
-    },
-    "EndPoint": {
-      "X": 8999.999999999996,
-      "Y": 4550.0,
-      "Z": 512.4999840000055
-    },
-    "Geometry": {
-      "DeltaX": 0.0,
-      "DeltaY": 0.0,
-      "DeltaZ": -159.99999999999818,
-      "Length": 159.99999999999818
-    }
-  },
-  {
-    "Id": 148226,
-    "Guid": "f11cbfa8-be2d-453e-bde6-3337b3799013",
-    "Type": "COLUMN",
-    "Direction": "VERTICAL",
-    "Name": "PVL80",
-    "Profile": "PL50*20",
-    "Material": "Steel_Undefined",
-    "Class": "100",
-    "Finish": "Undefined",
-    "StartPoint": {
-      "X": 8999.999999999996,
-      "Y": 4550.0,
-      "Z": 1072.4999840000037
-    },
-    "EndPoint": {
-      "X": 8999.999999999996,
-      "Y": 4550.0,
-      "Z": 912.4999840000055
-    },
-    "Geometry": {
-      "DeltaX": 0.0,
-      "DeltaY": 0.0,
-      "DeltaZ": -159.99999999999818,
-      "Length": 159.99999999999818
-    }
-  },
-  {
-    "Id": 148486,
-    "Guid": "28dcfa6b-31c0-4065-9ca9-a907ea225974",
-    "Type": "COLUMN",
-    "Direction": "VERTICAL",
-    "Name": "PVL80",
-    "Profile": "PL50*20",
-    "Material": "Steel_Undefined",
-    "Class": "100",
-    "Finish": "Undefined",
-    "StartPoint": {
-      "X": 8999.999999999996,
-      "Y": 4550.0,
-      "Z": 1472.4999840000037
-    },
-    "EndPoint": {
-      "X": 8999.999999999996,
-      "Y": 4550.0,
-      "Z": 1312.4999840000055
-    },
-    "Geometry": {
-      "DeltaX": 0.0,
-      "DeltaY": 0.0,
-      "DeltaZ": -159.99999999999818,
-      "Length": 159.99999999999818
-    }
-  },
-  {
-    "Id": 148746,
-    "Guid": "dec3c94b-8924-4667-931f-3a1ff0291938",
-    "Type": "COLUMN",
-    "Direction": "VERTICAL",
-    "Name": "PVL80",
-    "Profile": "PL50*20",
-    "Material": "Steel_Undefined",
-    "Class": "100",
-    "Finish": "Undefined",
-    "StartPoint": {
-      "X": 8999.999999999996,
-      "Y": 4550.0,
-      "Z": 1872.4999840000037
-    },
-    "EndPoint": {
-      "X": 8999.999999999996,
-      "Y": 4550.0,
-      "Z": 1712.4999840000055
-    },
-    "Geometry": {
-      "DeltaX": 0.0,
-      "DeltaY": 0.0,
-      "DeltaZ": -159.99999999999818,
-      "Length": 159.99999999999818
-    }
-  },
-  {
-    "Id": 149006,
-    "Guid": "6067605a-05ab-455f-b42c-b5f58cc0e182",
-    "Type": "COLUMN",
-    "Direction": "VERTICAL",
-    "Name": "PVL80",
-    "Profile": "PL50*20",
-    "Material": "Steel_Undefined",
-    "Class": "100",
-    "Finish": "Undefined",
-    "StartPoint": {
-      "X": 8999.999999999996,
-      "Y": 4550.0,
-      "Z": 2272.4999840000037
-    },
-    "EndPoint": {
-      "X": 8999.999999999996,
-      "Y": 4550.0,
-      "Z": 2112.4999840000055
-    },
-    "Geometry": {
-      "DeltaX": 0.0,
-      "DeltaY": 0.0,
-      "DeltaZ": -159.99999999999818,
-      "Length": 159.99999999999818
-    }
-  },
-  {
-    "Id": 149266,
-    "Guid": "05719924-a12c-4de1-829c-b983fb23b1c7",
-    "Type": "COLUMN",
-    "Direction": "VERTICAL",
-    "Name": "PVL80",
-    "Profile": "PL50*20",
-    "Material": "Steel_Undefined",
-    "Class": "100",
-    "Finish": "Undefined",
-    "StartPoint": {
-      "X": 8999.999999999996,
-      "Y": 4550.0,
-      "Z": 2672.4999840000037
-    },
-    "EndPoint": {
-      "X": 8999.999999999996,
-      "Y": 4550.0,
-      "Z": 2512.4999840000055
-    },
-    "Geometry": {
-      "DeltaX": 0.0,
-      "DeltaY": 0.0,
-      "DeltaZ": -159.99999999999818,
-      "Length": 159.99999999999818
-    }
-  },
-  {
-    "Id": 153936,
-    "Guid": "40b65120-53b0-4472-bffe-56fd23cb7321",
-    "Type": "COLUMN",
-    "Direction": "VERTICAL",
-    "Name": "PVL80",
-    "Profile": "PL50*20",
-    "Material": "Steel_Undefined",
-    "Class": "100",
-    "Finish": "Undefined",
-    "StartPoint": {
-      "X": 9000.000000000002,
-      "Y": -50.00000000000716,
-      "Z": 3072.4999840000023
-    },
-    "EndPoint": {
-      "X": 9000.000000000002,
-      "Y": -50.00000000000716,
-      "Z": 2912.4999840000046
-    },
-    "Geometry": {
-      "DeltaX": 0.0,
-      "DeltaY": 0.0,
-      "DeltaZ": -159.99999999999773,
-      "Length": 159.99999999999773
-    }
-  },
-  {
-    "Id": 168883,
-    "Guid": "8ec85c57-6928-4709-973c-96fdf6ba714c",
-    "Type": "BEAM",
-    "Direction": "HORIZONTAL",
-    "Name": "CONCRETE ANCHOR",
-    "Profile": "D22",
-    "Material": "Steel_Undefined",
-    "Class": "100",
-    "Finish": "Undefined",
-    "StartPoint": {
-      "X": 9100.000000000002,
-      "Y": 905.9999999999998,
-      "Z": 2261.0
-    },
-    "EndPoint": {
-      "X": 9010.000000000002,
-      "Y": 905.9999999999998,
-      "Z": 2261.0
-    },
-    "Geometry": {
-      "DeltaX": -90.0,
-      "DeltaY": 0.0,
-      "DeltaZ": 0.0,
-      "Length": 90.0
-    }
-  },
-  {
-    "Id": 169235,
-    "Guid": "a637037a-5788-457b-b51e-d4c71dcb3c80",
-    "Type": "BEAM",
-    "Direction": "HORIZONTAL",
-    "Name": "CONCRETE ANCHOR",
-    "Profile": "D22",
-    "Material": "Steel_Undefined",
-    "Class": "100",
-    "Finish": "Undefined",
-    "StartPoint": {
-      "X": 9100.000000000002,
-      "Y": 3594.0,
-      "Z": 2239.0
-    },
-    "EndPoint": {
-      "X": 9010.000000000002,
-      "Y": 3594.0,
-      "Z": 2239.0
-    },
-    "Geometry": {
-      "DeltaX": -90.0,
-      "DeltaY": 0.0,
-      "DeltaZ": 0.0,
-      "Length": 90.0
-    }
-  },
-  {
-    "Id": 177322,
-    "Guid": "e6617577-ac8b-4208-a69e-66318fc97c66",
-    "Type": "COLUMN",
-    "Direction": "VERTICAL",
-    "Name": "BEAM",
-    "Profile": "900*900",
-    "Material": "Concrete_Undefined",
-    "Class": "3",
+    "Name": "COLUMN",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "1",
     "Finish": "",
     "StartPoint": {
       "X": 0.0,
-      "Y": 0.0,
+      "Y": 2500.0000000000005,
       "Z": 0.0
     },
     "EndPoint": {
       "X": 0.0,
-      "Y": 0.0,
-      "Z": 3000.0
+      "Y": 2500.0000000000005,
+      "Z": 12000.0
     },
     "Geometry": {
       "DeltaX": 0.0,
       "DeltaY": 0.0,
-      "DeltaZ": 3000.0,
-      "Length": 3000.0
+      "DeltaZ": 12000.0,
+      "Length": 12000.0
     }
   },
   {
-    "Id": 177350,
-    "Guid": "3156ee7d-8877-44b7-af99-91d6805bc9d2",
+    "Id": 93580,
+    "Guid": "54a5e159-a23c-45d5-95cc-38ada844e38d",
     "Type": "COLUMN",
     "Direction": "VERTICAL",
-    "Name": "BEAM",
-    "Profile": "900*900",
-    "Material": "Concrete_Undefined",
-    "Class": "3",
+    "Name": "COLUMN",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "1",
     "Finish": "",
     "StartPoint": {
-      "X": 4000.0,
-      "Y": 0.0,
+      "X": 1250.0000000000005,
+      "Y": 4665.063509461097,
       "Z": 0.0
     },
     "EndPoint": {
-      "X": 4000.0,
-      "Y": 0.0,
-      "Z": 3000.0
+      "X": 1250.0000000000005,
+      "Y": 4665.063509461097,
+      "Z": 12000.0
     },
     "Geometry": {
       "DeltaX": 0.0,
       "DeltaY": 0.0,
-      "DeltaZ": 3000.0,
-      "Length": 3000.0
+      "DeltaZ": 12000.0,
+      "Length": 12000.0
     }
   },
   {
-    "Id": 177375,
-    "Guid": "129d64c0-e8cc-4d4e-8346-240bdb89513f",
+    "Id": 93555,
+    "Guid": "70efffef-cb67-4082-bf35-b7b919d2be03",
     "Type": "COLUMN",
     "Direction": "VERTICAL",
-    "Name": "BEAM",
-    "Profile": "900*900",
-    "Material": "Concrete_Undefined",
-    "Class": "3",
+    "Name": "COLUMN",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "1",
     "Finish": "",
     "StartPoint": {
-      "X": 0.0,
-      "Y": 4000.0,
+      "X": 3750.0,
+      "Y": 4665.063509461097,
       "Z": 0.0
     },
     "EndPoint": {
-      "X": 0.0,
-      "Y": 4000.0,
-      "Z": 3000.0
+      "X": 3750.0,
+      "Y": 4665.063509461097,
+      "Z": 12000.0
     },
     "Geometry": {
       "DeltaX": 0.0,
       "DeltaY": 0.0,
-      "DeltaZ": 3000.0,
-      "Length": 3000.0
+      "DeltaZ": 12000.0,
+      "Length": 12000.0
     }
   },
   {
-    "Id": 177400,
-    "Guid": "cb72ab04-7fec-4435-8ba3-ca172629b320",
+    "Id": 93530,
+    "Guid": "0f76707d-537a-4c7b-97bc-ca9c2961d6e5",
     "Type": "COLUMN",
     "Direction": "VERTICAL",
-    "Name": "BEAM",
-    "Profile": "900*900",
-    "Material": "Concrete_Undefined",
-    "Class": "3",
+    "Name": "COLUMN",
+    "Profile": "L50X50X5",
+    "Material": "S235JR",
+    "Class": "1",
     "Finish": "",
     "StartPoint": {
-      "X": 4000.0,
-      "Y": 4000.0,
-      "Z": 200.0
-    },
-    "EndPoint": {
-      "X": 4000.0,
-      "Y": 4000.0,
-      "Z": 3000.0
-    },
-    "Geometry": {
-      "DeltaX": 0.0,
-      "DeltaY": 0.0,
-      "DeltaZ": 2800.0,
-      "Length": 2800.0
-    }
-  },
-  {
-    "Id": 177425,
-    "Guid": "56f7f977-b761-4e76-aff8-d30ea27921e0",
-    "Type": "BEAM",
-    "Direction": "HORIZONTAL",
-    "Name": "BEAM",
-    "Profile": "900*900",
-    "Material": "Concrete_Undefined",
-    "Class": "3",
-    "Finish": "",
-    "StartPoint": {
-      "X": 0.0,
-      "Y": 0.0,
-      "Z": 3000.0
-    },
-    "EndPoint": {
-      "X": 4000.0,
-      "Y": 0.0,
-      "Z": 3000.0
-    },
-    "Geometry": {
-      "DeltaX": 4000.0,
-      "DeltaY": 0.0,
-      "DeltaZ": 0.0,
-      "Length": 4000.0
-    }
-  },
-  {
-    "Id": 177452,
-    "Guid": "8f3f2517-7fb9-48b7-819f-6745bdb24346",
-    "Type": "BEAM",
-    "Direction": "HORIZONTAL",
-    "Name": "BEAM",
-    "Profile": "900*900",
-    "Material": "Concrete_Undefined",
-    "Class": "3",
-    "Finish": "",
-    "StartPoint": {
-      "X": 0.0,
-      "Y": 4000.0,
-      "Z": 3000.0
-    },
-    "EndPoint": {
-      "X": 4000.0,
-      "Y": 4000.0,
-      "Z": 3000.0
-    },
-    "Geometry": {
-      "DeltaX": 4000.0,
-      "DeltaY": 0.0,
-      "DeltaZ": 0.0,
-      "Length": 4000.0
-    }
-  },
-  {
-    "Id": 177506,
-    "Guid": "5e885bf2-0e59-4ebe-9ae5-8b1f8332beaa",
-    "Type": "COLUMN",
-    "Direction": "VERTICAL",
-    "Name": "BEAM",
-    "Profile": "900*900",
-    "Material": "Concrete_Undefined",
-    "Class": "3",
-    "Finish": "",
-    "StartPoint": {
-      "X": 0.0,
-      "Y": 0.0,
+      "X": 5000.0,
+      "Y": 2500.0,
       "Z": 0.0
     },
     "EndPoint": {
-      "X": 0.0,
-      "Y": 0.0,
-      "Z": 3000.0
+      "X": 5000.0,
+      "Y": 2500.0,
+      "Z": 12000.0
     },
     "Geometry": {
       "DeltaX": 0.0,
       "DeltaY": 0.0,
-      "DeltaZ": 3000.0,
-      "Length": 3000.0
-    }
-  },
-  {
-    "Id": 177531,
-    "Guid": "f5c5be4d-399e-42ee-b0db-6ed5ab9df3d1",
-    "Type": "COLUMN",
-    "Direction": "VERTICAL",
-    "Name": "BEAM",
-    "Profile": "900*900",
-    "Material": "Concrete_Undefined",
-    "Class": "3",
-    "Finish": "",
-    "StartPoint": {
-      "X": 4000.0,
-      "Y": 0.0,
-      "Z": 0.0
-    },
-    "EndPoint": {
-      "X": 4000.0,
-      "Y": 0.0,
-      "Z": 3000.0
-    },
-    "Geometry": {
-      "DeltaX": 0.0,
-      "DeltaY": 0.0,
-      "DeltaZ": 3000.0,
-      "Length": 3000.0
-    }
-  },
-  {
-    "Id": 177556,
-    "Guid": "aee5f61f-251b-4c13-9a50-1668210933bc",
-    "Type": "COLUMN",
-    "Direction": "VERTICAL",
-    "Name": "BEAM",
-    "Profile": "900*900",
-    "Material": "Concrete_Undefined",
-    "Class": "3",
-    "Finish": "",
-    "StartPoint": {
-      "X": 0.0,
-      "Y": 4000.0,
-      "Z": 0.0
-    },
-    "EndPoint": {
-      "X": 0.0,
-      "Y": 4000.0,
-      "Z": 3000.0
-    },
-    "Geometry": {
-      "DeltaX": 0.0,
-      "DeltaY": 0.0,
-      "DeltaZ": 3000.0,
-      "Length": 3000.0
-    }
-  },
-  {
-    "Id": 177581,
-    "Guid": "a067402d-edd8-42c7-afea-200fa638945b",
-    "Type": "COLUMN",
-    "Direction": "VERTICAL",
-    "Name": "BEAM",
-    "Profile": "900*900",
-    "Material": "Concrete_Undefined",
-    "Class": "3",
-    "Finish": "",
-    "StartPoint": {
-      "X": 4000.0,
-      "Y": 4000.0,
-      "Z": 200.0
-    },
-    "EndPoint": {
-      "X": 4000.0,
-      "Y": 4000.0,
-      "Z": 3000.0
-    },
-    "Geometry": {
-      "DeltaX": 0.0,
-      "DeltaY": 0.0,
-      "DeltaZ": 2800.0,
-      "Length": 2800.0
-    }
-  },
-  {
-    "Id": 177606,
-    "Guid": "2098e7ae-b680-4ade-a431-e53293aa5681",
-    "Type": "BEAM",
-    "Direction": "HORIZONTAL",
-    "Name": "BEAM",
-    "Profile": "900*900",
-    "Material": "Concrete_Undefined",
-    "Class": "3",
-    "Finish": "",
-    "StartPoint": {
-      "X": 0.0,
-      "Y": 0.0,
-      "Z": 3000.0
-    },
-    "EndPoint": {
-      "X": 4000.0,
-      "Y": 0.0,
-      "Z": 3000.0
-    },
-    "Geometry": {
-      "DeltaX": 4000.0,
-      "DeltaY": 0.0,
-      "DeltaZ": 0.0,
-      "Length": 4000.0
-    }
-  },
-  {
-    "Id": 177631,
-    "Guid": "8b8c714f-7933-413c-8e1f-8a06ffe62758",
-    "Type": "BEAM",
-    "Direction": "HORIZONTAL",
-    "Name": "BEAM",
-    "Profile": "900*900",
-    "Material": "Concrete_Undefined",
-    "Class": "3",
-    "Finish": "",
-    "StartPoint": {
-      "X": 0.0,
-      "Y": 4000.0,
-      "Z": 3000.0
-    },
-    "EndPoint": {
-      "X": 4000.0,
-      "Y": 4000.0,
-      "Z": 3000.0
-    },
-    "Geometry": {
-      "DeltaX": 4000.0,
-      "DeltaY": 0.0,
-      "DeltaZ": 0.0,
-      "Length": 4000.0
+      "DeltaZ": 12000.0,
+      "Length": 12000.0
     }
   }
 ]

@@ -31,6 +31,8 @@ for item in data:
 
     rows.append({
         "Id": item.get("Id"),
+        "Guid": item.get("Guid"),
+
         "Type": item.get("Type"),
         "Direction": item.get("Direction"),
         "Name": item.get("Name"),

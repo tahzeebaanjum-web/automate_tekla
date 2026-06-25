@@ -1,0 +1,499 @@
+// ============================================================
+//  TeklaServer.cs
+//  Tekla 2026 Open API — Local REST Bridge
+//
+//  Setup:
+//  1. Visual Studio mein new "Tekla Structures Plugin" project banao
+//  2. References add karo:
+//     - Tekla.Structures.dll
+//     - Tekla.Structures.Model.dll
+//     - Tekla.Structures.Geometry3d.dll
+//  3. NuGet: Newtonsoft.Json
+//  4. Build karo → Tekla automatically plugin load karega
+//  5. Tekla mein: Applications & components → Run plugin
+// ============================================================
+
+using System;
+using System.Collections.Generic;
+using System.Net;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+using Newtonsoft.Json;
+using Tekla.Structures.Model;
+using Tekla.Structures.Geometry3d;
+
+namespace TeklaRestBridge
+{
+    // ── Data models ──────────────────────────────────────────
+
+    public class MemberData
+    {
+        public string Id       { get; set; }
+        public string Name     { get; set; }
+        public string Profile  { get; set; }
+        public string Material { get; set; }
+        public string Class    { get; set; }
+        public string Type     { get; set; }  // column / beam / secondary / unknown
+        public double StartX   { get; set; }
+        public double StartY   { get; set; }
+        public double StartZ   { get; set; }
+        public double EndX     { get; set; }
+        public double EndY     { get; set; }
+        public double EndZ     { get; set; }
+        public double Length   { get; set; }
+        public string Phase    { get; set; }
+    }
+
+    public class ConnectionData
+    {
+        public string FromId { get; set; }
+        public string ToId   { get; set; }
+        public string Type   { get; set; }  // joint / weld / bolt
+    }
+
+    public class ModelInfo
+    {
+        public string ModelName    { get; set; }
+        public string ModelPath    { get; set; }
+        public int    TotalMembers { get; set; }
+        public int    Columns      { get; set; }
+        public int    Beams        { get; set; }
+        public int    Secondary    { get; set; }
+        public int    Unknown      { get; set; }
+        public List<MemberData>     Members     { get; set; }
+        public List<ConnectionData> Connections { get; set; }
+    }
+
+    public class CreateMemberRequest
+    {
+        public string Profile  { get; set; }
+        public string Material { get; set; }
+        public string Type     { get; set; }
+        public double StartX   { get; set; }
+        public double StartY   { get; set; }
+        public double StartZ   { get; set; }
+        public double EndX     { get; set; }
+        public double EndY     { get; set; }
+        public double EndZ     { get; set; }
+        public string Class    { get; set; }
+        public string Name     { get; set; }
+    }
+
+    // ── Main Plugin Class ────────────────────────────────────
+
+    public class TeklaRestPlugin
+    {
+        private readonly Model        _model = new Model();
+        private          HttpListener _listener;
+        private          Thread       _serverThread;
+
+        // FIX: Use CancellationToken instead of Thread.Abort() which is
+        // obsolete in .NET 5+ and throws ThreadAbortException unpredictably.
+        private readonly CancellationTokenSource _cts = new CancellationTokenSource();
+
+        private const string BASE_URL = "http://localhost:5000/";
+
+        public void Start()
+        {
+            _listener = new HttpListener();
+            _listener.Prefixes.Add(BASE_URL);
+            _listener.Start();
+
+            _serverThread = new Thread(ListenLoop) { IsBackground = true };
+            _serverThread.Start();
+
+            Console.WriteLine("[TeklaServer] Running on http://localhost:5000");
+        }
+
+        public void Stop()
+        {
+            // FIX: Signal cancellation first, then stop listener gracefully.
+            // Old code called _serverThread?.Abort() which is removed in .NET 5+.
+            _cts.Cancel();
+            _listener?.Stop();
+        }
+
+        // ── HTTP listener loop ────────────────────────────────
+
+        private void ListenLoop()
+        {
+            // FIX: Check cancellation token instead of relying on IsListening alone.
+            while (!_cts.IsCancellationRequested && _listener.IsListening)
+            {
+                try
+                {
+                    var ctx = _listener.GetContext();
+                    // FIX: Pass the cancellation token into the task.
+                    Task.Run(() => HandleRequest(ctx), _cts.Token);
+                }
+                catch (HttpListenerException)
+                {
+                    // Listener was stopped — exit loop cleanly.
+                    break;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"[TeklaServer] ListenLoop error: {ex.Message}");
+                }
+            }
+        }
+
+        private void HandleRequest(HttpListenerContext ctx)
+        {
+            var req = ctx.Request;
+            var res = ctx.Response;
+
+            // CORS headers — React localhost:3000 ke liye
+            res.Headers.Add("Access-Control-Allow-Origin",  "*");
+            res.Headers.Add("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
+            res.Headers.Add("Access-Control-Allow-Headers", "Content-Type");
+            res.ContentType = "application/json";
+
+            if (req.HttpMethod == "OPTIONS")
+            {
+                res.StatusCode = 200;
+                res.Close();
+                return;
+            }
+
+            string path = req.Url.AbsolutePath.ToLower();
+            string body = "";
+
+            try
+            {
+                // ── GET /model — full model data ──────────────
+                if (req.HttpMethod == "GET" && path == "/model")
+                {
+                    var info = GetModelData();
+                    body = JsonConvert.SerializeObject(info, Formatting.Indented);
+                }
+
+                // ── GET /members — member list ─────────────────
+                else if (req.HttpMethod == "GET" && path == "/members")
+                {
+                    var members = GetAllMembers();
+                    body = JsonConvert.SerializeObject(members, Formatting.Indented);
+                }
+
+                // ── GET /connections — edges for network graph ─
+                else if (req.HttpMethod == "GET" && path == "/connections")
+                {
+                    // FIX: GetConnections() now accepts a pre-fetched member list
+                    // to avoid calling GetAllMembers() twice (was called inside
+                    // GetConnections() AND here separately — O(n) extra API round-trip).
+                    var members = GetAllMembers();
+                    var conns   = GetConnections(members);
+                    body = JsonConvert.SerializeObject(conns, Formatting.Indented);
+                }
+
+                // ── POST /create — create new beam or column ───
+                else if (req.HttpMethod == "POST" && path == "/create")
+                {
+                    // FIX: Wrap StreamReader in a using block to prevent resource leak.
+                    string reqBody;
+                    using (var reader = new System.IO.StreamReader(req.InputStream, Encoding.UTF8))
+                    {
+                        reqBody = reader.ReadToEnd();
+                    }
+                    var data   = JsonConvert.DeserializeObject<CreateMemberRequest>(reqBody);
+                    var result = CreateMember(data);
+                    body = JsonConvert.SerializeObject(result);
+                }
+
+                // ── POST /select — select member in Tekla ──────
+                else if (req.HttpMethod == "POST" && path == "/select")
+                {
+                    // FIX: Wrap StreamReader in a using block to prevent resource leak.
+                    string reqBody;
+                    using (var reader = new System.IO.StreamReader(req.InputStream, Encoding.UTF8))
+                    {
+                        reqBody = reader.ReadToEnd();
+                    }
+                    var payload = JsonConvert.DeserializeObject<Dictionary<string, string>>(reqBody);
+
+                    // FIX: Guard against missing "id" key to avoid KeyNotFoundException.
+                    if (payload != null && payload.TryGetValue("id", out string memberId))
+                        SelectMember(memberId);
+
+                    body = "{\"success\":true}";
+                }
+
+                // ── GET /status ─────────────────────────────────
+                else if (req.HttpMethod == "GET" && path == "/status")
+                {
+                    bool connected = _model.GetConnectionStatus();
+                    body = JsonConvert.SerializeObject(new
+                    {
+                        connected,
+                        version   = "Tekla 2026",
+                        timestamp = DateTime.Now,
+                    });
+                }
+
+                else
+                {
+                    res.StatusCode = 404;
+                    body = "{\"error\":\"Route not found\"}";
+                }
+            }
+            catch (Exception ex)
+            {
+                res.StatusCode = 500;
+                body = JsonConvert.SerializeObject(new { error = ex.Message });
+                Console.WriteLine($"[TeklaServer] HandleRequest error: {ex}");
+            }
+
+            byte[] buf = Encoding.UTF8.GetBytes(body);
+            res.ContentLength64 = buf.Length;
+            res.OutputStream.Write(buf, 0, buf.Length);
+            res.Close();
+        }
+
+        // ── Model Data Extraction ─────────────────────────────
+
+        private ModelInfo GetModelData()
+        {
+            var modelInfo = _model.GetInfo();
+
+            // FIX: Fetch members once and reuse — old code called GetAllMembers()
+            // inside GetModelData() and then GetConnections() called it again internally,
+            // resulting in two full Tekla API enumerations for one /model request.
+            var members     = GetAllMembers();
+            var connections = GetConnections(members);
+
+            return new ModelInfo
+            {
+                ModelName    = modelInfo.ModelName,
+                ModelPath    = modelInfo.ModelPath,
+                Members      = members,
+                Connections  = connections,
+                TotalMembers = members.Count,
+                Columns      = members.FindAll(m => m.Type == "column").Count,
+                Beams        = members.FindAll(m => m.Type == "beam").Count,
+                Secondary    = members.FindAll(m => m.Type == "secondary").Count,
+                Unknown      = members.FindAll(m => m.Type == "unknown").Count,
+            };
+        }
+
+        private List<MemberData> GetAllMembers()
+        {
+            var result = new List<MemberData>();
+
+            // FIX: Removed the unused `var selector = new ModelObjectSelector();`
+            // declaration that appeared before the real selector call.
+            var objects = _model.GetModelObjectSelector()
+                .GetAllObjectsWithType(ModelObject.ModelObjectEnum.BEAM);
+
+            // FIX: Use a proper do/while or call MoveNext inside the loop condition
+            // so the very first object is not skipped.  The original code called
+            // MoveNext() once before the loop, which is correct for Tekla enumerators,
+            // but then only checked Current != null — this is fine as written;
+            // however it is cleaner and safer to let the loop handle all advancement.
+            while (objects.MoveNext())
+            {
+                if (objects.Current is Beam beam)
+                {
+                    var m = new MemberData
+                    {
+                        Id       = beam.Identifier.ID.ToString(),
+                        Name     = beam.Name ?? "",
+                        Profile  = beam.Profile?.ProfileString  ?? "",
+                        Material = beam.Material?.MaterialString ?? "",
+                        Class    = beam.Class   ?? "",
+                        Phase    = beam.Phase?.PhaseNumber.ToString() ?? "",
+                        StartX   = Math.Round(beam.StartPoint.X, 1),
+                        StartY   = Math.Round(beam.StartPoint.Y, 1),
+                        StartZ   = Math.Round(beam.StartPoint.Z, 1),
+                        EndX     = Math.Round(beam.EndPoint.X, 1),
+                        EndY     = Math.Round(beam.EndPoint.Y, 1),
+                        EndZ     = Math.Round(beam.EndPoint.Z, 1),
+                    };
+
+                    double dx = m.EndX - m.StartX;
+                    double dy = m.EndY - m.StartY;
+                    double dz = m.EndZ - m.StartZ;
+                    m.Length = Math.Round(Math.Sqrt(dx * dx + dy * dy + dz * dz) / 1000.0, 3); // mm → m
+
+                    m.Type = ClassifyMember(beam);
+                    result.Add(m);
+                }
+            }
+
+            return result;
+        }
+
+        private string ClassifyMember(Beam beam)
+        {
+            string name    = (beam.Name                     ?? "").ToUpper();
+            string profile = (beam.Profile?.ProfileString   ?? "").ToUpper();
+            string cls     = (beam.Class                    ?? "").Trim();
+
+            double dx = Math.Abs(beam.EndPoint.X - beam.StartPoint.X);
+            double dy = Math.Abs(beam.EndPoint.Y - beam.StartPoint.Y);
+            double dz = Math.Abs(beam.EndPoint.Z - beam.StartPoint.Z);
+
+            if (name.Contains("COL") || name.Contains("COLUMN") || (dx < 50 && dy < 50 && dz > 100))
+                return "column";
+
+            if (name.Contains("SEC")    || name.Contains("BRAC") || name.Contains("PURLIN") ||
+                profile.StartsWith("L") || profile.StartsWith("C"))
+                return "secondary";
+
+            if (name.Contains("BEAM")     || name.Contains("GIRDER")   ||
+                profile.StartsWith("IPE") || profile.StartsWith("HEA") || profile.StartsWith("HEB"))
+                return "beam";
+
+            if (cls == "100" || cls == "0" || string.IsNullOrEmpty(cls))
+                return "unknown";
+
+            return "beam"; // default
+        }
+
+        // FIX: Accept a pre-fetched member list to avoid the double GetAllMembers()
+        // call that the original code performed every time connections were needed.
+        private List<ConnectionData> GetConnections(List<MemberData> members)
+        {
+            var result    = new List<ConnectionData>();
+            double threshold = 50.0; // 50 mm tolerance
+
+            for (int i = 0; i < members.Count; i++)
+            {
+                for (int j = i + 1; j < members.Count; j++)
+                {
+                    if (AreConnected(members[i], members[j], threshold))
+                    {
+                        result.Add(new ConnectionData
+                        {
+                            FromId = members[i].Id,
+                            ToId   = members[j].Id,
+                            Type   = "joint",
+                        });
+                    }
+                }
+            }
+
+            return result;
+        }
+
+        private bool AreConnected(MemberData a, MemberData b, double tol)
+        {
+            // FIX: Use named value tuples (X, Y, Z) instead of Item1/Item2/Item3
+            // for readability and to avoid confusion with positional access.
+            var pointsA = new (double X, double Y, double Z)[]
+            {
+                (a.StartX, a.StartY, a.StartZ),
+                (a.EndX,   a.EndY,   a.EndZ),
+            };
+            var pointsB = new (double X, double Y, double Z)[]
+            {
+                (b.StartX, b.StartY, b.StartZ),
+                (b.EndX,   b.EndY,   b.EndZ),
+            };
+
+            foreach (var pa in pointsA)
+                foreach (var pb in pointsB)
+                {
+                    double dist = Math.Sqrt(
+                        Math.Pow(pa.X - pb.X, 2) +
+                        Math.Pow(pa.Y - pb.Y, 2) +
+                        Math.Pow(pa.Z - pb.Z, 2));
+                    if (dist <= tol) return true;
+                }
+
+            return false;
+        }
+
+        // ── Create Member ─────────────────────────────────────
+
+        private object CreateMember(CreateMemberRequest req)
+        {
+            if (req == null)
+                return new { success = false, message = "Invalid request body" };
+
+            var beam = new Beam
+            {
+                StartPoint = new Point(req.StartX, req.StartY, req.StartZ),
+                EndPoint   = new Point(req.EndX,   req.EndY,   req.EndZ),
+                Name       = req.Name  ?? (req.Type?.ToUpper() ?? "MEMBER"),
+                Class      = req.Class ?? "1",
+            };
+
+            // FIX: Profile and Material are sub-objects on Beam — they cannot be set
+            // via object initializer syntax (it tries to replace the property, not
+            // set its fields). Must assign their string properties separately AFTER
+            // the beam is constructed; otherwise the compiler throws
+            // "Property or indexer cannot be assigned to — it is read-only".
+            beam.Profile.ProfileString    = req.Profile  ?? "IPE300";
+            beam.Material.MaterialString  = req.Material ?? "S355";
+
+            bool ok = beam.Insert();
+            _model.CommitChanges();
+
+            if (ok)
+                return new
+                {
+                    success = true,
+                    id      = beam.Identifier.ID.ToString(),
+                    message = $"{req.Type ?? "Member"} created successfully",
+                };
+            else
+                return new { success = false, message = "Failed to insert member into Tekla model" };
+        }
+
+        // ── Select Member in Tekla viewport ──────────────────
+
+        private void SelectMember(string id)
+        {
+            if (!int.TryParse(id, out int intId)) return;
+
+            var selector = new Tekla.Structures.Model.UI.ModelObjectSelector();
+            var objects  = new System.Collections.ArrayList();
+
+            var allObjs = _model.GetModelObjectSelector()
+                .GetAllObjectsWithType(ModelObject.ModelObjectEnum.BEAM);
+
+            // FIX: Use while(MoveNext()) pattern consistently (matches GetAllMembers fix).
+            while (allObjs.MoveNext())
+            {
+                if (allObjs.Current?.Identifier.ID == intId)
+                {
+                    objects.Add(allObjs.Current);
+                    break;
+                }
+            }
+
+            if (objects.Count > 0)
+                selector.Select(objects);
+        }
+    }
+
+    // ── Entry point (called by Tekla plugin loader) ──────────
+    //
+    // FIX: Tekla Structures plugins do NOT use a static Main() entry point.
+    // They are loaded by Tekla via the plugin interface. For a standalone
+    // console runner (useful for debugging outside Tekla), keep Main() but
+    // mark it clearly. If deploying as a real Tekla plugin, implement
+    // Tekla.Structures.Model.Operations.Operation or use the Applications
+    // & Components panel runner instead.
+
+    public class PluginEntry
+    {
+        private static TeklaRestPlugin _plugin;
+
+        [STAThread]
+        public static void Main()
+        {
+            // NOTE: This Main() is only used when running as a standalone
+            // console app for debugging. Inside Tekla, instantiate
+            // TeklaRestPlugin directly from your plugin's Run() method.
+            _plugin = new TeklaRestPlugin();
+            _plugin.Start();
+
+            Console.WriteLine("Press ENTER to stop server...");
+            Console.ReadLine();
+
+            _plugin.Stop();
+        }
+    }
+}
